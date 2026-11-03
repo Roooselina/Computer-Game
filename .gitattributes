@@ -1,0 +1,29 @@
+# 텍스트 파일 줄바꿈 자동 처리
+* text=auto
+
+# Unity YAML (씬/프리팹 등) 은 텍스트로 비교 (줄바꿈은 OS 기본값으로 체크아웃)
+*.unity        text
+*.prefab       text
+*.asset        text
+*.meta         text
+*.anim         text
+*.controller   text
+*.mat          text
+*.physicsMaterial2D text
+*.inputactions text
+*.cs           text diff=csharp
+
+# 바이너리
+*.png   binary
+*.jpg   binary
+*.psd   binary
+*.ai    binary
+*.pdf   binary
+*.wav   binary
+*.mp3   binary
+*.ogg   binary
+*.ttf   binary
+*.otf   binary
+*.fbx   binary
+*.pptx  binary
+*.swf   binary

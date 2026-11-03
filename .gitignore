@@ -1,0 +1,69 @@
+# =============================================================
+#  컴퓨터 게임 통합 저장소 .gitignore
+#  모든 패턴은 하위 프로젝트 폴더(UniRun/, Project_02/ ...)에도 적용된다.
+# =============================================================
+
+# ----- Unity 생성 폴더 (Unity가 다시 만듦) -----
+**/[Ll]ibrary/
+**/[Tt]emp/
+**/[Oo]bj/
+**/[Ll]ogs/
+**/[Uu]ser[Ss]ettings/
+**/[Bb]uild/
+**/[Bb]uilds/
+**/[Mm]emoryCaptures/
+**/[Rr]ecordings/
+**/[Bb]uild[Ss]ettings/
+
+# Asset Store 도구 / 크래시 리포트
+**/[Aa]ssets/AssetStoreTools*
+sysinfo.txt
+crashlytics-build.properties
+
+
+# ----- 빌드 산출물 -----
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+*.pdb
+*.mdb
+*.pidb
+*.booproj
+*_BurstDebugInformation_DoNotShip/
+
+# ----- IDE / 에디터 (Unity가 다시 생성) -----
+.vs/
+.vscode/
+.idea/
+.gradle/
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.svd
+*.opendb
+*.VC.db
+
+# ----- 운영체제 임시 파일 -----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Thumbs.db.meta
+ehthumbs.db
+Desktop.ini
+~$*
+
+# ----- Python 캐시 (맵 생성 도구 등) -----
+__pycache__/
+*.pyc
