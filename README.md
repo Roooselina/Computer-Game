@@ -16,7 +16,7 @@
 | # | 프로젝트 | 장르 | Unity 버전 | 폴더 |
 |---|---|---|---|---|
 | 1 | **UniRun** | 2D 러너 (Classic + Adventure) | 6000.6.4f1 | [`UniRun/`](UniRun/) |
-| 2 | *추후 추가* | | | `Project_02/` |
+| 2 | **Dodge** | 3D 탄알 피하기 (쉴드 · 랭킹) | 6000.6.0f1 | [`Dodge/`](Dodge/) |
 | 3 | *추후 추가* | | | `Project_03/` |
 
 ### 1. UniRun
@@ -28,6 +28,15 @@
 - 맵 데이터는 `UniRun/Tools/MapGen/gamemap.py`가 생성한 JSON을 실행 시 읽어서 배치합니다.
 
 자세한 내용은 [UniRun/README.md](UniRun/README.md)를 참고하세요.
+
+### 2. Dodge
+
+교재의 기본 Dodge(사방에서 날아오는 탄알 피하기)에서 출발해 여러 기능을 추가한 프로젝트입니다.
+
+- **기본**: 상하좌우 이동, 플레이어를 조준하는 탄알 생성기, 생존 시간 점수, 게임오버 후 R로 재시작
+- **추가**: 쉴드(Space, 3초 무적 + 5초 쿨다운), 메인 메뉴, 최고 점수 및 Top 3 랭킹 저장, ESC 일시정지 메뉴, 2단계 피격 연출(파티클 · 화면 Flash · 카메라 흔들림 · Hit Stop · 사운드)
+
+자세한 내용은 [Dodge/README.md](Dodge/README.md)를 참고하세요.
 
 ## 실행 방법
 
@@ -55,7 +64,13 @@
 │   ├── Tools/
 │   ├── Documentation/
 │   └── README.md
-└── Project_02/ ...  ← 추후 추가
+├── Dodge/           ← 2번 프로젝트 (독립 Unity 프로젝트)
+│   ├── Assets/
+│   ├── Packages/
+│   ├── ProjectSettings/
+│   ├── Documentation/
+│   └── README.md
+└── Project_03/ ...  ← 추후 추가
 ```
 
 ## 향후 프로젝트 추가 방법
