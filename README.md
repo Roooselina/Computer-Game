@@ -42,7 +42,7 @@
 
 1. 저장소를 Clone합니다.
    ```bash
-   git clone https://github.com/<계정>/Computer-Game.git
+   git clone https://github.com/Roooselina/Computer-Game.git
    ```
 2. **Unity Hub** → **Add** → **Add project from disk** → 실행할 프로젝트 폴더(예: `Computer-Game/UniRun`)를 선택합니다.
    - 저장소 최상위 폴더가 아니라 **각 프로젝트 폴더**를 선택해야 합니다.
@@ -53,7 +53,7 @@
 ## 저장소 구조
 
 ```
-컴퓨터 게임/
+Computer-Game/
 ├── README.md        ← 이 문서
 ├── .gitignore       ← 모든 프로젝트 공통 (Library, Temp, Build 등 제외)
 ├── .gitattributes
