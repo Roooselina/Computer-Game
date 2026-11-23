@@ -1,0 +1,180 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Game/Scenes/Title.unity
+    guid: 674d41f5928f0e14d9e45392f4f716e0
+  - enabled: 1
+    path: Assets/Game/Scenes/P01_BurningVillage.unity
+    guid: b4d83cdaab6c0cf4a93e9f676a2bde21
+  - enabled: 1
+    path: Assets/Game/Scenes/P02_RuinedHouse.unity
+    guid: 72f838e5c66863e4b86bc51b160248e3
+  - enabled: 1
+    path: Assets/Game/Scenes/P03_FriendDesktop.unity
+    guid: 509e306208f4bf945a8848bc36094b37
+  - enabled: 1
+    path: Assets/Game/Scenes/C01_TankLab.unity
+    guid: 91d7f9c141ab52740b6890a6da2eae62
+  - enabled: 1
+    path: Assets/Game/Scenes/C02_EscapeWing.unity
+    guid: 966d17c817e06c64db4df1b7c7a7085b
+  - enabled: 1
+    path: Assets/Game/Scenes/C03_SpecimenArchive.unity
+    guid: acd2efea3b46bf44396ec291cde6c24e
+  - enabled: 1
+    path: Assets/Game/Scenes/M09_StaffCafeteria.unity
+    guid: ee8ef4a3656aa4e48829dad34a8a286d
+  - enabled: 1
+    path: Assets/Game/Scenes/C04_CargoBay.unity
+    guid: ce4b4513325753f49b78db15fa46a6e4
+  - enabled: 1
+    path: Assets/Game/Scenes/C05_CultureRoom.unity
+    guid: 36d4f9449aefd1741af5b9e614e99f81
+  - enabled: 1
+    path: Assets/Game/Scenes/C06_LongCorridor.unity
+    guid: 8bcbb87250f2e0a4cb6bb3735a7d5db6
+  - enabled: 1
+    path: Assets/Game/Scenes/M14_ChemGreenhouse.unity
+    guid: 1ec2e59e2b91b7d43b5d35f2b4bb02af
+  - enabled: 1
+    path: Assets/Game/Scenes/M13_MixingRoom.unity
+    guid: 68b851aabe546fa429d59584a249aa8c
+  - enabled: 1
+    path: Assets/Game/Scenes/M15_ObservationLounge.unity
+    guid: 6e06fd71abf34d14f9c9f7e1fd1a7646
+  - enabled: 1
+    path: Assets/Game/Scenes/M16_CargoLift.unity
+    guid: 8a50eabe6c1769f4dbad10e05cf5c996
+  - enabled: 1
+    path: Assets/Game/Scenes/M17_WasteShelter.unity
+    guid: 729825fbadccf964ba77f1eb831ed1a7
+  - enabled: 1
+    path: Assets/Game/Scenes/M18_PumpRoom.unity
+    guid: a1959fd48e74b894da3439ae2513ca5d
+  - enabled: 1
+    path: Assets/Game/Scenes/M19_JunkMarket.unity
+    guid: 0796533464e3c044e846cdfef73b00dd
+  - enabled: 1
+    path: Assets/Game/Scenes/M20_MaintTunnel.unity
+    guid: dec4d13d751412f478fa69a9bb8e953a
+  - enabled: 1
+    path: Assets/Game/Scenes/M21_Workshop.unity
+    guid: ce230bc8a0a08644185665f9fe47e029
+  - enabled: 1
+    path: Assets/Game/Scenes/M22_ConveyorHall.unity
+    guid: 4edbf818af3e4814baf5cf3a4149be78
+  - enabled: 1
+    path: Assets/Game/Scenes/M23_VerticalShaft.unity
+    guid: 1707fdffaeb30dd438ac25541dda8500
+  - enabled: 1
+    path: Assets/Game/Scenes/M24_Laundry.unity
+    guid: e3a1c41738beab2489857624e1ed5f75
+  - enabled: 1
+    path: Assets/Game/Scenes/M25_VenelleRoom.unity
+    guid: d2cf14af9768fec46be3fb209c08964f
+  - enabled: 1
+    path: Assets/Game/Scenes/M26_DormRoof.unity
+    guid: 83f2aeba65871964c866b239521a3a8d
+  - enabled: 1
+    path: Assets/Game/Scenes/M27_HoldingBlock.unity
+    guid: 9edb0c35f0dc93549bd6e71400eecb42
+  - enabled: 1
+    path: Assets/Game/Scenes/M28_ReceptionHall.unity
+    guid: 068356e9ae358dd418b88d4df184412d
+  - enabled: 1
+    path: Assets/Game/Scenes/M29_CounselBooth.unity
+    guid: dbe556cc1f57c434db3f9c66d481882a
+  - enabled: 1
+    path: Assets/Game/Scenes/M30_VideoRoom.unity
+    guid: 1e6665de7dc914c4cb1474f18e8621f6
+  - enabled: 1
+    path: Assets/Game/Scenes/M31_ControlTower.unity
+    guid: a7298e34263db834481e68827142e9d7
+  - enabled: 1
+    path: Assets/Game/Scenes/M32_UpperCorridor.unity
+    guid: b8068a684b3de214486e7dacdcccb5a4
+  - enabled: 1
+    path: Assets/Game/Scenes/M33_RavielRoom.unity
+    guid: accdcc46ee936b1498ad5191840681bd
+  - enabled: 1
+    path: Assets/Game/Scenes/M34_CommRoom.unity
+    guid: 79f487adb6eccdc40a30444f9cfe5f8a
+  - enabled: 1
+    path: Assets/Game/Scenes/M35_SkyBridge.unity
+    guid: f9fdd6d1654c84144a4c57d4df6572fc
+  - enabled: 1
+    path: Assets/Game/Scenes/M36_WaitingRoom.unity
+    guid: 3d95c94a013c3fa48a226a99a4568b54
+  - enabled: 1
+    path: Assets/Game/Scenes/M37_ResonanceHall.unity
+    guid: 8074f1564a2b5a0408da1f59836b402b
+  - enabled: 1
+    path: Assets/Game/Scenes/M38_RecordArchive.unity
+    guid: 2c7dbbcc50c7a934f9020713e4e3bf80
+  - enabled: 1
+    path: Assets/Game/Scenes/M39_ServerRoom.unity
+    guid: b4195028ef508484193470daa660cd69
+  - enabled: 1
+    path: Assets/Game/Scenes/M40_CaptureTerminal.unity
+    guid: d0c90480dcf7b8f48a5bada38cf47a2a
+  - enabled: 1
+    path: Assets/Game/Scenes/M41_RecycleList.unity
+    guid: efe8d07623de8224fa7e4d6e49c206a6
+  - enabled: 1
+    path: Assets/Game/Scenes/M42_BoardingLounge.unity
+    guid: 7750f1e53711cc94fae09742c2c17093
+  - enabled: 1
+    path: Assets/Game/Scenes/M43_CapsuleCorridor.unity
+    guid: 85ad80c14516a9e4f8b0fe7027ad8187
+  - enabled: 1
+    path: Assets/Game/Scenes/M44_TransferChamber.unity
+    guid: 17ed6c62a47b29a4dbf2091cab878362
+  - enabled: 1
+    path: Assets/Game/Scenes/M45_CollapseWay.unity
+    guid: 27fc274da35df6f40abebafe74aff5ce
+  - enabled: 1
+    path: Assets/Game/Scenes/M46_CollapsedCourt.unity
+    guid: 81be652b0bc6f6142a4bcee73a1cbafa
+  - enabled: 1
+    path: Assets/Game/Scenes/M47_RubblePile.unity
+    guid: abb8df811dea1fc4b9513dbadd9d5637
+  - enabled: 0
+    path: Assets/Game/Scenes/_Obsolete/M00_LuRoom.unity
+    guid: ae752ee8d96b5b9478d17a39447c19fa
+  - enabled: 0
+    path: Assets/Game/Scenes/_Obsolete/M01_Rooftop.unity
+    guid: f2d9d898b8440d44a9e22d05c6bfa035
+  - enabled: 0
+    path: Assets/Game/Scenes/_Obsolete/M02_Alley.unity
+    guid: fda0941b7ba924b458f2f5fbb4ae300d
+  - enabled: 0
+    path: Assets/Game/Scenes/_Obsolete/M03_FriendTerminal.unity
+    guid: 48c44eaa6972b1e4abbcc8b3e43a3644
+  - enabled: 0
+    path: Assets/Game/Scenes/_Obsolete/M04_ExperimentTank.unity
+    guid: 2056fc16be6045b459a15942b186af4e
+  - enabled: 0
+    path: Assets/Game/Scenes/_Obsolete/M05_DisinfectCorridor.unity
+    guid: b6978f9dfdf6d4d4b83e5f4afdbc4c86
+  - enabled: 0
+    path: Assets/Game/Scenes/_Obsolete/M06_BackupPower.unity
+    guid: f95e96aaeb50c5c4da75ccf8b2621046
+  - enabled: 0
+    path: Assets/Game/Scenes/_Obsolete/M07_SpecimenCorridor.unity
+    guid: d9a24311780b1224d94ec96ffe05685e
+  - enabled: 0
+    path: Assets/Game/Scenes/_Obsolete/M08_Archive.unity
+    guid: 11f730eccbc416349bfdc51cf3d73e0d
+  - enabled: 0
+    path: Assets/Game/Scenes/_Obsolete/M10_CargoBay.unity
+    guid: 7cc8a91ec5fa0c846841c21333aed0ce
+  - enabled: 0
+    path: Assets/Game/Scenes/_Obsolete/M12_CultureRoom.unity
+    guid: 1275b62180c084a47878090651fb2dcf
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
