@@ -17,7 +17,7 @@
 |---|---|---|---|---|
 | 1 | **UniRun** | 2D 러너 (Classic + Adventure) | 6000.6.4f1 | [`UniRun/`](UniRun/) |
 | 2 | **Dodge** | 3D 탄알 피하기 (쉴드 · 랭킹) | 6000.6.0f1 | [`Dodge/`](Dodge/) |
-| 3 | *추후 추가* | | | `Project_03/` |
+| 3 | **ELECTRIC WORLD: LAST LIGHT** | 2D 횡스크롤 실시간 스텔스 액션 | 6000.6.x | [`Project_03/`](Project_03/) |
 
 ### 1. UniRun
 
@@ -70,7 +70,12 @@ Computer-Game/
 │   ├── ProjectSettings/
 │   ├── Documentation/
 │   └── README.md
-└── Project_03/ ...  ← 추후 추가
+├── Project_03/      ← 3번 프로젝트 ELECTRIC WORLD: LAST LIGHT (독립 Unity 프로젝트)
+│   ├── Assets/
+│   ├── Packages/
+│   ├── ProjectSettings/
+│   ├── Docs/
+│   └── README.md
 ```
 
 ## 향후 프로젝트 추가 방법
