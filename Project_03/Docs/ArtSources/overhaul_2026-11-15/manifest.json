@@ -1,0 +1,72 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "external_paid_api_used": false,
+  "shared_prompt": "Original finely hand-painted 2D side-view Korean fantasy RPG illustration; delicate outlines, nuanced materials and spatial depth; not pixel art, not photorealistic 3D; no people, UI text or collision geometry baked into background. Keep independently placed props and gameplay legible. Transparent atlases use true alpha and equal grid cells.",
+  "assets": [
+    {
+      "source": "Docs\\ArtSources\\overhaul_2026-11-15\\lab_rear.png",
+      "generation_id": "8dab3c8d-e48b-4347-939b-183f963d04b7",
+      "production_prompt": "Laboratory rear architecture only, side elevation, empty foreground, cream panels and steel pipes, distant observation windows."
+    },
+    {
+      "source": "Docs\\ArtSources\\overhaul_2026-11-15\\lab_props.png",
+      "generation_id": "aeb74059-6ef0-4150-bf57-01de0f3d5673",
+      "production_prompt": "Transparent 3x2 atlas: tank rear, clear front glass, shattered tank, console, cabinet, cover rack."
+    },
+    {
+      "source": "Docs\\ArtSources\\overhaul_2026-11-15\\village_rear.png",
+      "generation_id": "39935a18-486f-4c22-a000-40d3a8cd2fc7",
+      "production_prompt": "Burning hillside village at twilight, varied flames and ruined bridges, unobstructed lower foreground, no characters."
+    },
+    {
+      "source": "Docs\\ArtSources\\overhaul_2026-11-15\\house_shell.png",
+      "generation_id": "2a58d637-d7f2-4fab-ab68-4026f67fe013",
+      "production_prompt": "Ruined small house architectural cutout, jagged timber plaster, fully transparent rear-wall opening, no furniture."
+    },
+    {
+      "source": "Docs\\ArtSources\\overhaul_2026-11-15\\furniture.png",
+      "generation_id": "c0c7cb58-a90e-4bad-97ab-360b48bff3b1",
+      "production_prompt": "Transparent 3x2 atlas: CRT desk, bed, scorched shelf, lounge bench, vending machine, hanging light."
+    },
+    {
+      "source": "Docs\\ArtSources\\overhaul_2026-11-15\\terrain.png",
+      "generation_id": "213c99b0-668f-4f9a-8ba0-ccfba03c3245",
+      "production_prompt": "Transparent 2x3 modular terrain strips: lab deck, support panel, village path, wood floor, catwalk, corroded floor."
+    },
+    {
+      "source": "Docs\\ArtSources\\overhaul_2026-11-15\\corridor_rear.png",
+      "generation_id": "92bdd21d-a57d-4584-a2c7-3db554252a48",
+      "production_prompt": "Observation corridor rear architecture, distant specimen tanks behind windows, cream ceramic and blue steel, empty foreground."
+    },
+    {
+      "source": "Docs\\ArtSources\\overhaul_2026-11-15\\devices.png",
+      "generation_id": "6f17ead9-1122-427d-9741-81d4bd474a69",
+      "production_prompt": "Transparent 3x2 atlas: CCTV, closed door, open door frame, ordinary examination couch, trolley, junction box."
+    },
+    {
+      "source": "Docs\\ArtSources\\overhaul_2026-11-15\\icons.png",
+      "generation_id": "ff9acfee-cdc4-4a0a-bb8d-bbfb568e4f15",
+      "production_prompt": "Transparent 3x2 icons: locked internet, handbook, fingertip electricity, gear interference, strong bolt, cable travel."
+    },
+    {
+      "source": "Docs\\ArtSources\\overhaul_2026-11-15\\fire_smoke.png",
+      "generation_id": "9f14c516-61a6-4856-bb3b-5d5cd22af072",
+      "production_prompt": "Transparent 4x2 animation atlas: four dancing fire frames, four expanding smoke frames."
+    },
+    {
+      "source": "Docs\\ArtSources\\overhaul_2026-11-15\\reaction_vfx.png",
+      "generation_id": "91231e22-c5d7-4a46-a9ac-e8279f169778",
+      "production_prompt": "Transparent 4x2 animation atlas: four branching electric frames, four chemical liquid splash frames. Edited to remove all rectangular white haze and preserve local effect alpha."
+    },
+    {
+      "source": "Docs\\ArtSources\\overhaul_2026-11-15\\maintenance_rear.png",
+      "generation_id": "d7a6952f-58a2-4411-85e0-3c6a3395ff4b",
+      "production_prompt": "Maintenance rear architecture with pipes, transformer coils, valves, steel and brass, empty playable foreground."
+    },
+    {
+      "source": "Docs\\ArtSources\\overhaul_2026-11-15\\lounge_rear.png",
+      "generation_id": "c2cfc030-79d6-4569-8c7f-d9d6c4e608d0",
+      "production_prompt": "Warm facility staff lounge rear wall, observation window, kettle shelf, lamps and noticeboard without text; separate benches and characters."
+    }
+  ]
+}

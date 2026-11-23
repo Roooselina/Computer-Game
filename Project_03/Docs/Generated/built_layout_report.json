@@ -1,0 +1,1221 @@
+{
+    "maps": [
+        {
+            "id": "P01",
+            "scene": "P01_BurningVillage",
+            "spawns": [
+                "start"
+            ],
+            "exits": [],
+            "events": []
+        },
+        {
+            "id": "P02",
+            "scene": "P02_RuinedHouse",
+            "spawns": [
+                "start"
+            ],
+            "exits": [],
+            "events": []
+        },
+        {
+            "id": "P03",
+            "scene": "P03_FriendDesktop",
+            "spawns": [
+                "start"
+            ],
+            "exits": [],
+            "events": [
+                "pc_enter",
+                "pc_guide",
+                "pc_internet"
+            ]
+        },
+        {
+            "id": "C01",
+            "scene": "C01_TankLab",
+            "spawns": [
+                "tank",
+                "start"
+            ],
+            "exits": [],
+            "events": [
+                "lab_tank_label",
+                "op_gap",
+                "lab_pouch",
+                "lab_emergency",
+                "lab_jars",
+                "lab_bed",
+                "lab_tools",
+                "lab_board",
+                "lab_bin",
+                "lab_window",
+                "lab_lockers",
+                "lab_researcher",
+                "lab_researcher"
+            ]
+        },
+        {
+            "id": "C02",
+            "scene": "C02_EscapeWing",
+            "spawns": [
+                "from_lab",
+                "start",
+                "from_c03"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_C03_start",
+                    "to": "C03",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "checkpoint",
+                "c2s_jam_tut",
+                "checkpoint",
+                "c2s_cover_tut",
+                "checkpoint"
+            ]
+        },
+        {
+            "id": "C03",
+            "scene": "C03_SpecimenArchive",
+            "spawns": [
+                "start",
+                "from_c02",
+                "from_cargo",
+                "from_cafe"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_C02_from_c03",
+                    "to": "C02",
+                    "spawn": "from_c03",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "Exit_C04_start",
+                    "to": "C04",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "door_M09from_archive",
+                    "to": "M09",
+                    "spawn": "from_archive",
+                    "kind": "door",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "checkpoint",
+                "checkpoint",
+                "c2_ad_first"
+            ]
+        },
+        {
+            "id": "M09",
+            "scene": "M09_StaffCafeteria",
+            "spawns": [
+                "from_archive"
+            ],
+            "exits": [
+                {
+                    "id": "door_C03from_cafe",
+                    "to": "C03",
+                    "spawn": "from_cafe",
+                    "kind": "door",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "c2_vending",
+                "c2_lever"
+            ]
+        },
+        {
+            "id": "C04",
+            "scene": "C04_CargoBay",
+            "spawns": [
+                "from_lab",
+                "start",
+                "from_c03"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_C03_from_cargo",
+                    "to": "C03",
+                    "spawn": "from_cargo",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "Exit_C05_start",
+                    "to": "C05",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "c2_line_tutorial",
+                "checkpoint"
+            ]
+        },
+        {
+            "id": "C05",
+            "scene": "C05_CultureRoom",
+            "spawns": [
+                "from_greenhouse",
+                "start",
+                "from_mix"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_C04_from_lab",
+                    "to": "C04",
+                    "spawn": "from_lab",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "Exit_C06_start",
+                    "to": "C06",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "door_M14from_lab",
+                    "to": "M14",
+                    "spawn": "from_lab",
+                    "kind": "door",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "checkpoint"
+            ]
+        },
+        {
+            "id": "C06",
+            "scene": "C06_LongCorridor",
+            "spawns": [
+                "start",
+                "from_mix"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_C05_from_mix",
+                    "to": "C05",
+                    "spawn": "from_mix",
+                    "kind": "edge",
+                    "require": "",
+                    "block": "c6_combat_locked"
+                },
+                {
+                    "id": "Exit_M13_start",
+                    "to": "M13",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "c3_boss_done",
+                    "block": ""
+                }
+            ],
+            "events": []
+        },
+        {
+            "id": "M14",
+            "scene": "M14_ChemGreenhouse",
+            "spawns": [
+                "from_lab"
+            ],
+            "exits": [
+                {
+                    "id": "door_C05from_greenhouse",
+                    "to": "C05",
+                    "spawn": "from_greenhouse",
+                    "kind": "door",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": []
+        },
+        {
+            "id": "M13",
+            "scene": "M13_MixingRoom",
+            "spawns": [
+                "start",
+                "from_rest"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_C06_from_mix",
+                    "to": "C06",
+                    "spawn": "from_mix",
+                    "kind": "edge",
+                    "require": "",
+                    "block": "venelle_carried"
+                },
+                {
+                    "id": "Exit_M15_start",
+                    "to": "M15",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": []
+        },
+        {
+            "id": "M15",
+            "scene": "M15_ObservationLounge",
+            "spawns": [
+                "start",
+                "rest_seat",
+                "from_lift"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M16_start",
+                    "to": "M16",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "c3_boss_done",
+                    "block": ""
+                },
+                {
+                    "id": "Exit_M13_from_rest",
+                    "to": "M13",
+                    "spawn": "from_rest",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "m15_gap_look"
+            ]
+        },
+        {
+            "id": "M16",
+            "scene": "M16_CargoLift",
+            "spawns": [
+                "start",
+                "lift_top",
+                "lift_bottom",
+                "from_shelter"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M15_from_lift",
+                    "to": "M15",
+                    "spawn": "from_lift",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "Exit_M17_start",
+                    "to": "M17",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "checkpoint",
+                "checkpoint",
+                "m16_lift",
+                "m16_lift"
+            ]
+        },
+        {
+            "id": "M17",
+            "scene": "M17_WasteShelter",
+            "spawns": [
+                "start",
+                "from_pump",
+                "from_market",
+                "from_tunnel",
+                "meet"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M16_from_shelter",
+                    "to": "M16",
+                    "spawn": "from_shelter",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "Exit_M20_start",
+                    "to": "M20",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "waste_resolved",
+                    "block": ""
+                },
+                {
+                    "id": "door_M18start",
+                    "to": "M18",
+                    "spawn": "start",
+                    "kind": "door",
+                    "require": "waste_met",
+                    "block": ""
+                },
+                {
+                    "id": "door_M19start",
+                    "to": "M19",
+                    "spawn": "start",
+                    "kind": "door",
+                    "require": "waste_met",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "checkpoint",
+                "waste_meet",
+                "waste_jugs",
+                "waste_hatch",
+                "waste_f",
+                "waste_008",
+                "waste_survivors",
+                "waste_fight_end"
+            ]
+        },
+        {
+            "id": "M18",
+            "scene": "M18_PumpRoom",
+            "spawns": [
+                "start"
+            ],
+            "exits": [
+                {
+                    "id": "door_M17from_pump",
+                    "to": "M17",
+                    "spawn": "from_pump",
+                    "kind": "door",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "m18_enter"
+            ]
+        },
+        {
+            "id": "M19",
+            "scene": "M19_JunkMarket",
+            "spawns": [
+                "start"
+            ],
+            "exits": [
+                {
+                    "id": "door_M17from_market",
+                    "to": "M17",
+                    "spawn": "from_market",
+                    "kind": "door",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "m19_enter",
+                "market_lantern",
+                "market_scrap",
+                "market_lines"
+            ]
+        },
+        {
+            "id": "M20",
+            "scene": "M20_MaintTunnel",
+            "spawns": [
+                "start",
+                "from_workshop"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M17_from_tunnel",
+                    "to": "M17",
+                    "spawn": "from_tunnel",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "Exit_M21_start",
+                    "to": "M21",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "checkpoint",
+                "checkpoint",
+                "m20_crawl_hint"
+            ]
+        },
+        {
+            "id": "M21",
+            "scene": "M21_Workshop",
+            "spawns": [
+                "start",
+                "from_hall"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M20_from_workshop",
+                    "to": "M20",
+                    "spawn": "from_workshop",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "Exit_M22_start",
+                    "to": "M22",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "checkpoint",
+                "ws_manual",
+                "ws_after"
+            ]
+        },
+        {
+            "id": "M22",
+            "scene": "M22_ConveyorHall",
+            "spawns": [
+                "start",
+                "from_shaft"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M21_from_hall",
+                    "to": "M21",
+                    "spawn": "from_hall",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "Exit_M23_start",
+                    "to": "M23",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "checkpoint",
+                "m22_enter",
+                "hall_off_line"
+            ]
+        },
+        {
+            "id": "M23",
+            "scene": "M23_VerticalShaft",
+            "spawns": [
+                "start",
+                "from_dorm"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M22_from_shaft",
+                    "to": "M22",
+                    "spawn": "from_shaft",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "Exit_M24_start",
+                    "to": "M24",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "checkpoint",
+                "m23_chase",
+                "m23_l2",
+                "m23_l3",
+                "m23_top",
+                "m23_plate_zap",
+                "m23_shutter"
+            ]
+        },
+        {
+            "id": "M24",
+            "scene": "M24_Laundry",
+            "spawns": [
+                "start",
+                "from_roof",
+                "from_room"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M23_from_dorm",
+                    "to": "M23",
+                    "spawn": "from_dorm",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "door_M26start",
+                    "to": "M26",
+                    "spawn": "start",
+                    "kind": "door",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "door_M25start",
+                    "to": "M25",
+                    "spawn": "start",
+                    "kind": "door",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "checkpoint",
+                "m24_enter",
+                "laundry_twins",
+                "laundry_others",
+                "ch7_gate"
+            ]
+        },
+        {
+            "id": "M25",
+            "scene": "M25_VenelleRoom",
+            "spawns": [
+                "start"
+            ],
+            "exits": [
+                {
+                    "id": "door_M24from_room",
+                    "to": "M24",
+                    "spawn": "from_room",
+                    "kind": "door",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "m25_enter",
+                "room_photo",
+                "room_letter",
+                "room_wrappers"
+            ]
+        },
+        {
+            "id": "M26",
+            "scene": "M26_DormRoof",
+            "spawns": [
+                "start"
+            ],
+            "exits": [
+                {
+                    "id": "door_M24from_roof",
+                    "to": "M24",
+                    "spawn": "from_roof",
+                    "kind": "door",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "roof_sit"
+            ]
+        },
+        {
+            "id": "M27",
+            "scene": "M27_HoldingBlock",
+            "spawns": [
+                "start",
+                "from_hall"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M27.west",
+                    "to": "M24",
+                    "spawn": "from_room",
+                    "kind": "edge",
+                    "require": "",
+                    "block": "ch7_entered"
+                },
+                {
+                    "id": "Exit_M27.east",
+                    "to": "M28",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "holding_released",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "checkpoint",
+                "checkpoint",
+                "c7_enter",
+                "c7_stairs",
+                "c7_release",
+                "c7_desk"
+            ]
+        },
+        {
+            "id": "M28",
+            "scene": "M28_ReceptionHall",
+            "spawns": [
+                "start",
+                "from_booth"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M28.west",
+                    "to": "M27",
+                    "spawn": "from_hall",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "M28.booth",
+                    "to": "M29",
+                    "spawn": "start",
+                    "kind": "door",
+                    "require": "c7_meilin_done",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "checkpoint",
+                "c7_hall_enter",
+                "c7_ticket"
+            ]
+        },
+        {
+            "id": "M29",
+            "scene": "M29_CounselBooth",
+            "spawns": [
+                "start",
+                "from_video"
+            ],
+            "exits": [
+                {
+                    "id": "M29.hall",
+                    "to": "M28",
+                    "spawn": "from_booth",
+                    "kind": "door",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "M29.video",
+                    "to": "M30",
+                    "spawn": "start",
+                    "kind": "door",
+                    "require": "has_staff_card",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "c7_booth_enter",
+                "c7_chair",
+                "c7_booth_lock",
+                "c7_lostfound"
+            ]
+        },
+        {
+            "id": "M30",
+            "scene": "M30_VideoRoom",
+            "spawns": [
+                "start",
+                "from_tower"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M30.east",
+                    "to": "M31",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "c7_feeds_seen",
+                    "block": ""
+                },
+                {
+                    "id": "M30.booth",
+                    "to": "M29",
+                    "spawn": "from_video",
+                    "kind": "door",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "c7_bulkhead",
+                "c7_monitors"
+            ]
+        },
+        {
+            "id": "M31",
+            "scene": "M31_ControlTower",
+            "spawns": [
+                "start",
+                "from_corridor"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M31.west",
+                    "to": "M30",
+                    "spawn": "from_tower",
+                    "kind": "edge",
+                    "require": "",
+                    "block": "c7_bulkhead_closed"
+                },
+                {
+                    "id": "Exit_M31.east",
+                    "to": "M32",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "c7_control_done",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "c7_tower_enter",
+                "checkpoint",
+                "c7_control"
+            ]
+        },
+        {
+            "id": "M32",
+            "scene": "M32_UpperCorridor",
+            "spawns": [
+                "start",
+                "from_room"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M32.west",
+                    "to": "M31",
+                    "spawn": "from_corridor",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "Exit_M32.east",
+                    "to": "M33",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "c8_duel_done",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "checkpoint",
+                "c8_meet"
+            ]
+        },
+        {
+            "id": "M33",
+            "scene": "M33_RavielRoom",
+            "spawns": [
+                "start",
+                "from_comm"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M33.west",
+                    "to": "M32",
+                    "spawn": "from_room",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "Exit_M33.east",
+                    "to": "M34",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "c8_room_done",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "c8_room_enter",
+                "c8_photo",
+                "c8_cups"
+            ]
+        },
+        {
+            "id": "M34",
+            "scene": "M34_CommRoom",
+            "spawns": [
+                "start",
+                "from_bridge"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M34.west",
+                    "to": "M33",
+                    "spawn": "from_comm",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "Exit_M34.east",
+                    "to": "M35",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "checkpoint",
+                "c8_comm_enter",
+                "c8_comm_console"
+            ]
+        },
+        {
+            "id": "M35",
+            "scene": "M35_SkyBridge",
+            "spawns": [
+                "start",
+                "from_wait"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M35.west",
+                    "to": "M34",
+                    "spawn": "from_bridge",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "Exit_M35.east",
+                    "to": "M36",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "c8_bridge1",
+                "c8_bridge2",
+                "c8_bridge3",
+                "c8_bridge_bench"
+            ]
+        },
+        {
+            "id": "M36",
+            "scene": "M36_WaitingRoom",
+            "spawns": [
+                "start",
+                "from_hall",
+                "from_archive"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M36.west",
+                    "to": "M35",
+                    "spawn": "from_wait",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "Exit_M36.east",
+                    "to": "M37",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "M36.archive",
+                    "to": "M38",
+                    "spawn": "start",
+                    "kind": "door",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "c9_enter",
+                "c9_plans",
+                "c9_chart",
+                "c9_member1",
+                "c9_member2",
+                "c9_member3"
+            ]
+        },
+        {
+            "id": "M37",
+            "scene": "M37_ResonanceHall",
+            "spawns": [
+                "start",
+                "from_server"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M37.west",
+                    "to": "M36",
+                    "spawn": "from_hall",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "Exit_M37.east",
+                    "to": "M39",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "c9_lac_done",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "checkpoint",
+                "c9_stage_enter"
+            ]
+        },
+        {
+            "id": "M38",
+            "scene": "M38_RecordArchive",
+            "spawns": [
+                "start"
+            ],
+            "exits": [
+                {
+                    "id": "M38.wait",
+                    "to": "M36",
+                    "spawn": "from_archive",
+                    "kind": "door",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "c9_archive_enter",
+                "c9_tape"
+            ]
+        },
+        {
+            "id": "M39",
+            "scene": "M39_ServerRoom",
+            "spawns": [
+                "start",
+                "from_terminal",
+                "from_boarding"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M39.west",
+                    "to": "M37",
+                    "spawn": "from_server",
+                    "kind": "edge",
+                    "require": "",
+                    "block": "c9_hall_collapsed"
+                },
+                {
+                    "id": "Exit_M39.east",
+                    "to": "M42",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "c9_bin_done",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "checkpoint",
+                "c9_force",
+                "c9_capture"
+            ]
+        },
+        {
+            "id": "M40",
+            "scene": "M40_CaptureTerminal",
+            "spawns": [
+                "start"
+            ],
+            "exits": [],
+            "events": [
+                "c9_terminal_in",
+                "c9_d16"
+            ]
+        },
+        {
+            "id": "M41",
+            "scene": "M41_RecycleList",
+            "spawns": [
+                "start"
+            ],
+            "exits": [],
+            "events": [
+                "c9_bin_enter",
+                "c9_bin_list",
+                "c9_bin_status"
+            ]
+        },
+        {
+            "id": "M42",
+            "scene": "M42_BoardingLounge",
+            "spawns": [
+                "start",
+                "from_capsule"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M42.west",
+                    "to": "M39",
+                    "spawn": "from_boarding",
+                    "kind": "edge",
+                    "require": "",
+                    "block": "c10_boarding_seen"
+                },
+                {
+                    "id": "Exit_M42.east",
+                    "to": "M43",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "c10_enter",
+                "c10_board",
+                "c10_member1",
+                "c10_member2"
+            ]
+        },
+        {
+            "id": "M43",
+            "scene": "M43_CapsuleCorridor",
+            "spawns": [
+                "start",
+                "from_device"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M43.west",
+                    "to": "M42",
+                    "spawn": "from_capsule",
+                    "kind": "edge",
+                    "require": "",
+                    "block": ""
+                },
+                {
+                    "id": "Exit_M43.east",
+                    "to": "M44",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "c10_meilin_seen",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "c10_capsule",
+                "c10_meilin"
+            ]
+        },
+        {
+            "id": "M44",
+            "scene": "M44_TransferChamber",
+            "spawns": [
+                "start",
+                "from_corridor"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M44.east",
+                    "to": "M45",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "c10_boss_done",
+                    "block": ""
+                }
+            ],
+            "events": [
+                "c10_final_enter"
+            ]
+        },
+        {
+            "id": "M45",
+            "scene": "M45_CollapseWay",
+            "spawns": [
+                "start"
+            ],
+            "exits": [],
+            "events": [
+                "checkpoint",
+                "checkpoint",
+                "c10_fall"
+            ]
+        },
+        {
+            "id": "M46",
+            "scene": "M46_CollapsedCourt",
+            "spawns": [
+                "start"
+            ],
+            "exits": [
+                {
+                    "id": "Exit_M46.east",
+                    "to": "M47",
+                    "spawn": "start",
+                    "kind": "edge",
+                    "require": "c11_stood",
+                    "block": ""
+                }
+            ],
+            "events": []
+        },
+        {
+            "id": "M47",
+            "scene": "M47_RubblePile",
+            "spawns": [
+                "start"
+            ],
+            "exits": [],
+            "events": [
+                "c11_last"
+            ]
+        }
+    ]
+}
