@@ -1,0 +1,261 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 844574ec74d760b4d9697a85d9b92a47, type: 3}
+  m_Name: GameDatabase
+  m_EditorClassIdentifier: EW.Game::EW.GameDatabase
+  characters:
+  - id: lu
+    name: "\uB8E8"
+    baseHp: 48
+    hpPerLevel: 8
+    baseAtk: 8
+    atkPerLevel: 2
+    baseDef: 3
+    defPerLevel: 1
+    baseCharge: 6
+  - id: venelle
+    name: "\uBCA0\uB12C"
+    baseHp: 46
+    hpPerLevel: 7
+    baseAtk: 7
+    atkPerLevel: 2
+    baseDef: 3
+    defPerLevel: 1
+    baseCharge: 0
+  skills:
+  - id: tok
+    name: "\uD1A1!"
+    desc: "\uB2E8\uC77C 1.0. \uC804\uD558 \uC5C6\uC774 \uC5B8\uC81C\uB098 \uC0AC\uC6A9 \uAC00\uB2A5. \uC808\uC5F0 \uC0C1\uB300\uC5D0\uAC8C\uB3C4 \uCD5C\uC18C \uD53C\uD574."
+    cost: 0
+    target: 0
+    coef: 1
+    hits: 1
+    unlockLevel: 1
+    staggerChance: 0
+    alwaysHits: 1
+    minDamage: 1
+    chargeGain: 0
+    guard: 0
+    anim: Flick
+    fx: Spark
+    line: 
+  - id: spark_shot
+    name: "\uC2A4\uD30C\uD06C \uC0F7"
+    desc: "\uC6D0\uAC70\uB9AC \uB2E8\uC77C 1.5 (\uC791\uC740 \uC804\uAE30\uD0C4 \uB450 \uBC1C)."
+    cost: 1
+    target: 0
+    coef: 0.75
+    hits: 2
+    unlockLevel: 1
+    staggerChance: 0
+    alwaysHits: 1
+    minDamage: 1
+    chargeGain: 0
+    guard: 0
+    anim: Point
+    fx: Bolt
+    line: 
+  - id: gather
+    name: "\uC804\uD558 \uBAA8\uC73C\uAE30"
+    desc: "\uC804\uD558 +3. \uC774\uBC88 \uD134 \uBC1B\uB294 \uD53C\uD574 30% \uAC10\uC18C."
+    cost: 0
+    target: 3
+    coef: 0
+    hits: 1
+    unlockLevel: 1
+    staggerChance: 0
+    alwaysHits: 1
+    minDamage: 1
+    chargeGain: 3
+    guard: 0.3
+    anim: Charge
+    fx: 
+    line: 
+  - id: arc_whip
+    name: "\uC544\uD06C \uCC44\uCC0D"
+    desc: "\uC801 \uCD5C\uB300 2\uBA85\uC5D0\uAC8C 1.2\uC529."
+    cost: 2
+    target: 1
+    coef: 1.2
+    hits: 1
+    unlockLevel: 2
+    staggerChance: 0
+    alwaysHits: 1
+    minDamage: 1
+    chargeGain: 0
+    guard: 0
+    anim: Swing
+    fx: Arc
+    line: 
+  - id: thunder_kick
+    name: "\uBC88\uAC1C \uBC1C\uCC28\uAE30"
+    desc: "\uB2E8\uC77C 1.8. \uAE30\uACC4\uC758 \uC790\uC138\uB97C 35% \uD655\uB960\uB85C \uBB34\uB108\uB728\uB9BC(\uB2E4\uC74C \uD589\uB3D9 \uBD88\uAC00). \uCD5C\uC18C \uD53C\uD574 \uBCF4\uC7A5."
+    cost: 2
+    target: 0
+    coef: 1.8
+    hits: 1
+    unlockLevel: 3
+    staggerChance: 0.35
+    alwaysHits: 1
+    minDamage: 1
+    chargeGain: 0
+    guard: 0
+    anim: Kick
+    fx: Spark
+    line: 
+  enemies:
+  - id: patrol_guard
+    name: "\uC21C\uCC30 \uACBD\uBE44"
+    artId: droid03
+    hp: 26
+    atk: 7
+    def: 2
+    exp: 12
+    ai: 0
+    machine: 1
+    flying: 0
+    dropItem: bandage
+    dropChance: 0.35
+    shield: 0.35
+    note: "\uB2E4\uC74C \uD134 \uC81C\uC555\uBD09 \uC608\uACE0. \uBAB8\uD1B5\uC774 \uB290\uB9BC. (\uC784\uC2DC \uADF8\uB798\uD53D: Foozle Droid03)"
+  - id: capture_drone
+    name: "\uD3EC\uD68D \uB4DC\uB860"
+    artId: droid01
+    hp: 14
+    atk: 5
+    def: 1
+    exp: 9
+    ai: 1
+    machine: 1
+    flying: 1
+    dropItem: bandage
+    dropChance: 0.25
+    shield: 0
+    note: "\uADF8\uBB3C \uBC1C\uC0AC, \uCCB4\uB825 \uB0AE\uC74C. \uC81C\uC5B4 \uB2E8\uB9D0\uC774 \uAEBC\uC9C0\uBA74 \uC9C0\uC6D0 \uD589\uB3D9 \uC911\uB2E8. \uC790\uCCB4 \uBC30\uD130\uB9AC\uB85C \uC774\uB3D9\uC740 \uACC4\uC18D. (\uC784\uC2DC \uADF8\uB798\uD53D: Foozle Droid01)"
+  - id: carrier_bot
+    name: "\uC6B4\uBC18 \uB85C\uBD07"
+    artId: droid02
+    hp: 28
+    atk: 7
+    def: 2
+    exp: 14
+    ai: 2
+    machine: 1
+    flying: 1
+    dropItem: snack
+    dropChance: 0.2
+    shield: 0
+    note: "\uC9D0\uC744 \uB358\uC9C0\uACE0 \uD68C\uC218\uD558\uB290\uB77C \uD55C \uD134 \uC27C. (\uC784\uC2DC \uADF8\uB798\uD53D: Foozle Droid02 \u2014 \uC804\uC6A9 \uC678\uD615 \uC5C6\uC74C)"
+  - id: venelle_boss
+    name: "\uBCA0\uB12C"
+    artId: venelle
+    hp: 84
+    atk: 8
+    def: 3
+    exp: 40
+    ai: 3
+    machine: 0
+    flying: 0
+    dropItem: 
+    dropChance: 0.3
+    shield: 0
+    note: "3\uC7A5 \uBCF4\uC2A4. \uB300\uD654\uB85C \uD611\uC0C1 \uAC00\uB2A5."
+  items:
+  - id: snack
+    name: "\uACFC\uC790"
+    desc: "\uC548\uC815\uB3C4 30%\xB7\uC804\uD558 2 \uD68C\uBCF5."
+    healPct: 0.3
+    charge: 2
+    battleUse: 1
+    fieldUse: 1
+    iconSprite: Prop_Snack
+  - id: bandage
+    name: "\uD68C\uBCF5 \uBD95\uB300"
+    desc: "\uC548\uC815\uB3C4 45% \uD68C\uBCF5."
+    healPct: 0.45
+    charge: 0
+    battleUse: 1
+    fieldUse: 1
+    iconSprite: medkit_item
+  - id: chocolate
+    name: "\uCD08\uCF5C\uB9BF"
+    desc: "\uC555\uC218\uD488 \uBC14\uAD6C\uB2C8\uC758 \uAC89\uC637 \uC8FC\uBA38\uB2C8\uC5D0 \uB0A8\uC544 \uC788\uB358 \uCD08\uCF5C\uB9BF \uD55C \uAC1C. \uB204\uAD70\uAC00\uC5D0\uAC8C \uAC74\uB12C \uC218 \uC788\uB2E4."
+    healPct: 0
+    charge: 0
+    battleUse: 1
+    fieldUse: 0
+    iconSprite: Prop_Snack
+  - id: pump_part
+    name: "\uC774\uC74C\uC1E0 \uBD80\uD488"
+    desc: "\uBB3C \uD38C\uD504\uC758 \uAE68\uC9C4 \uC5F0\uACB0 \uBD80\uD488\uC744 \uBC14\uAFC0 \uC0C8 \uC774\uC74C\uC1E0. \uD38C\uD504\uC2E4 \uC120\uBC18\uC5D0\uC11C \uCC3E\uC558\uB2E4."
+    healPct: 0
+    charge: 0
+    battleUse: 0
+    fieldUse: 0
+    iconSprite: Prop_Snack
+  - id: staff_card
+    name: "\uC9C1\uC6D0 \uCE74\uB4DC"
+    desc: "\uC218\uC6A9\xB7\uC811\uC218\uB3D9 \uC9C1\uC6D0 \uCE74\uB4DC. \uC601\uC0C1\uC2E4 \uBB38\uC774 \uC5F4\uB9B0\uB2E4. (\uACBD\uBE44 \uCC45\uC0C1 / \uC0C1\uB2F4 \uBD80\uC2A4 \uBD84\uC2E4\uBB3C \uC0C1\uC790)"
+    healPct: 0
+    charge: 0
+    battleUse: 0
+    fieldUse: 0
+    iconSprite: Prop_Doc
+  - id: edward_tape
+    name: "\uB179\uC74C \uD14C\uC774\uD504"
+    desc: "\uB179\uC74C \uBCF4\uAD00\uC2E4\uC758 \uC624\uB798\uB41C \uD14C\uC774\uD504. \uC774\uB984\uD45C\uC5D0 'E.' \uB77C\uACE0\uB9CC \uC801\uD600 \uC788\uB2E4."
+    healPct: 0
+    charge: 0
+    battleUse: 0
+    fieldUse: 0
+    iconSprite: Prop_Doc
+  props:
+  - kind: 0
+    name: "\uB04A\uC5B4\uC9C4 \uB178\uCD9C \uC804\uC120"
+    desc: "\uC804\uC120 \uB05D\uC5D0\uC11C \uC544\uD06C\uB97C \uC77C\uC73C\uCF1C \uADFC\uCC98 \uC801 2\uBA85\uC744 \uACF5\uACA9."
+    cost: 1
+    coef: 1.3
+    maxTargets: 2
+    firstLine: "\uC774\uCABD\uC774\uC57C! \uBC18\uC9DD\uBC18\uC9DD!"
+  - kind: 1
+    name: "\uC81C\uC5B4 \uB2E8\uB9D0"
+    desc: "\uACFC\uD55C \uBC29\uC804\uC73C\uB85C \uB2E8\uB9D0 \uC804\uC6D0\uC744 \uBA48\uCD98\uB2E4. \uC9C0\uC6D0 \uB85C\uBD07\uC758 \uC9C0\uC2DC \uAE30\uB2A5 \uC911\uB2E8. \uAC19\uC740 \uB2E8\uB9D0\uB85C \uC5EC\uB294 \uBB38\uB3C4 \uBA48\uCD98\uB2E4."
+    cost: 2
+    coef: 0
+    maxTargets: 0
+    firstLine: "...\uBB38\uB3C4 \uAC19\uC774 \uAEBC\uC84C\uB124."
+  - kind: 2
+    name: "\uC804\uB3C4\uC131 \uC57D\uD488 \uC6C5\uB369\uC774"
+    desc: "\uC6C5\uB369\uC774\uB97C \uB530\uB77C \uBC29\uC804. \uC6C5\uB369\uC774 \uC704\uC758 \uC801\uC744 \uACF5\uACA9. \uC808\uC5F0 \uBC1C\uD310\uC758 \uC544\uAD70\uC740 \uC548\uC804."
+    cost: 2
+    coef: 1.6
+    maxTargets: 3
+    firstLine: 
+  difficulties:
+  - id: story
+    name: "\uC774\uC57C\uAE30"
+    enemyDamageMul: 0.7
+    healMul: 1
+    fieldChargeSeconds: 3
+    critChance: 0.15
+    critMul: 1.5
+    talkBaseChance: 0.7
+    retryHeal: 1
+  - id: normal
+    name: "\uAE30\uBCF8"
+    enemyDamageMul: 1
+    healMul: 1
+    fieldChargeSeconds: 3
+    critChance: 0.15
+    critMul: 1.5
+    talkBaseChance: 0.7
+    retryHeal: 1

@@ -1,0 +1,1108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7688539e913867d409397f8bbec99107, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: EW.Game::EW.GameConfig
+  database: {fileID: 11400000, guid: 0370d24277a8c39428dab1f3447ea2cd, type: 2}
+  dialogueJson: {fileID: 4900000, guid: e0837583cfd8a234badee109b54d054b, type: 3}
+  font: {fileID: 12800000, guid: fbd49edc637029f48864e36c5513333a, type: 3}
+  fontBold: {fileID: 12800000, guid: cb4c75db84ff9594cace94d117102d84, type: 3}
+  fontBody: {fileID: 12800000, guid: 93434ac036bb78b48aea3b95bcdd36b9, type: 3}
+  fontBodyBold: {fileID: 12800000, guid: 3da23c4e46f30ad46b45437a347c8725, type: 3}
+  panel: {fileID: 7253652341725546674, guid: 45a50e3a2cf059145b1bd39a6a7b4ea9, type: 3}
+  panelInlay: {fileID: -4197728725034674780, guid: c6199eac14a02984eada9c5778308b37, type: 3}
+  selectFrame: {fileID: -4958120187079686692, guid: 625b875bfbbbee4428bc57b27b32d04e, type: 3}
+  pixel: {fileID: 2848699042292247044, guid: 9a08ae859e5679442b18ba11546092c4, type: 3}
+  reviewToolsInRelease: 1
+  lineMaterial: {fileID: 2100000, guid: eec9d69934704714f89926cf791da540, type: 2}
+  titleBgm: {fileID: 8300000, guid: cc02108a6204ab7499dc72c1cbfe51f0, type: 3}
+  additive: {fileID: 2100000, guid: bfa05837f81ac224e841a1cc42b56657, type: 2}
+  audio:
+  - name: bgm_title
+    clip: {fileID: 8300000, guid: cc02108a6204ab7499dc72c1cbfe51f0, type: 3}
+  - name: amb_digital
+    clip: {fileID: 8300000, guid: 32141a51aeb2b54498b55cd31f9adace, type: 3}
+  - name: amb_fire
+    clip: {fileID: 8300000, guid: 63890046463eb2141a3715acc4af1b61, type: 3}
+  - name: amb_house
+    clip: {fileID: 8300000, guid: 14789f66aa2f115499e605b430eb48a9, type: 3}
+  - name: amb_lab
+    clip: {fileID: 8300000, guid: 0042f3339eaa7a645be7e6c8f35e40cb, type: 3}
+  - name: amb_lab_dark
+    clip: {fileID: 8300000, guid: c6f48ec59c047d04a80f4d9473ecf1ff, type: 3}
+  - name: bgm_battle
+    clip: {fileID: 8300000, guid: 570ade3d71a3e874c8d88e61a98f7b93, type: 3}
+  - name: bgm_tension
+    clip: {fileID: 8300000, guid: 1a0de0a89a68e4c4fbc98559322e9d08, type: 3}
+  - name: sfx_absorb
+    clip: {fileID: 8300000, guid: bbe9556707eac6b4aae01acb5625edd7, type: 3}
+  - name: sfx_acid
+    clip: {fileID: 8300000, guid: 01bee3b233ec8a746ab0c573367538fc, type: 3}
+  - name: sfx_advance
+    clip: {fileID: 8300000, guid: bdb400424ab6b5e4f9b2c30040ed8caa, type: 3}
+  - name: sfx_alarm
+    clip: {fileID: 8300000, guid: 0c92260108263c44a813d20c2195c41f, type: 3}
+  - name: sfx_baton_on
+    clip: {fileID: 8300000, guid: cb3a0b13515e27d4d913b5b71f9c0e37, type: 3}
+  - name: sfx_baton_swing
+    clip: {fileID: 8300000, guid: d1580a2d6cc298f4ab0876dca99b4151, type: 3}
+  - name: sfx_battle_start
+    clip: {fileID: 8300000, guid: 8136ce196b6d40d439cd90707be52c6f, type: 3}
+  - name: sfx_charge_up
+    clip: {fileID: 8300000, guid: d3b0a76989e32264a8c2ca823a5036b7, type: 3}
+  - name: sfx_connect
+    clip: {fileID: 8300000, guid: 4d93b3b2bacaa43418b0b8d5e9e66cd9, type: 3}
+  - name: sfx_debris
+    clip: {fileID: 8300000, guid: e51c1110962ed4944aed0b36076d382a, type: 3}
+  - name: sfx_discharge_big
+    clip: {fileID: 8300000, guid: 6a002e103ed20814f9e8106a960a1da5, type: 3}
+  - name: sfx_door_bang
+    clip: {fileID: 8300000, guid: ab2218f3fdc449a429c44a1cc876826e, type: 3}
+  - name: sfx_door_slide
+    clip: {fileID: 8300000, guid: 4509621fb8c460c4087243c40f309be1, type: 3}
+  - name: sfx_enemy_attack
+    clip: {fileID: 8300000, guid: 564f0d84837b4d44ba79f186eda7e98d, type: 3}
+  - name: sfx_enemy_die
+    clip: {fileID: 8300000, guid: 7f47ff0a097abbd4dad8da27957bdebf, type: 3}
+  - name: sfx_fall_whoosh
+    clip: {fileID: 8300000, guid: 61b38422898c8a3498c91903ab0d1928, type: 3}
+  - name: sfx_fire_burst
+    clip: {fileID: 8300000, guid: a4072a79405bfcf47b20268721bb425b, type: 3}
+  - name: sfx_flick
+    clip: {fileID: 8300000, guid: 578f737cf6b8673499067ae8d9c17bdb, type: 3}
+  - name: sfx_glass_break
+    clip: {fileID: 8300000, guid: 899f5477fd545b444a33abcb020c3747, type: 3}
+  - name: sfx_glass_knock
+    clip: {fileID: 8300000, guid: 6c56c3967c0672541847c13a14c74f40, type: 3}
+  - name: sfx_guard_break
+    clip: {fileID: 8300000, guid: dd3e9d9104adeac4cae71473e78fcffc, type: 3}
+  - name: sfx_heal
+    clip: {fileID: 8300000, guid: aec2e18c1aeceda438a23cdeee0700f0, type: 3}
+  - name: sfx_heartbeat
+    clip: {fileID: 8300000, guid: 857fc6556fd91eb48920994470c9c111, type: 3}
+  - name: sfx_hit_elec
+    clip: {fileID: 8300000, guid: 963cc0fffa168c643baafeb3b9f442ca, type: 3}
+  - name: sfx_hit_phys
+    clip: {fileID: 8300000, guid: 21a7ba8287991034290001900b7efbf1, type: 3}
+  - name: sfx_kick_dash
+    clip: {fileID: 8300000, guid: c31cc223127109c46b4c7cae6619f354, type: 3}
+  - name: sfx_land
+    clip: {fileID: 8300000, guid: 1c7dd3d039289aa41b8436be37961241, type: 3}
+  - name: sfx_levelup
+    clip: {fileID: 8300000, guid: 2cb1dc7492ae4714ca30bee790004002, type: 3}
+  - name: sfx_light_off
+    clip: {fileID: 8300000, guid: b8b57537ed055194fb04529c45d761d7, type: 3}
+  - name: sfx_metal_creak
+    clip: {fileID: 8300000, guid: aa703cfa4aa41de47843a211c9f97829, type: 3}
+  - name: sfx_pc_beep
+    clip: {fileID: 8300000, guid: c757b7771f0c60a40ae3fcf0e75aff6d, type: 3}
+  - name: sfx_pc_on
+    clip: {fileID: 8300000, guid: f6f15284f65cebb4687a5e93e30c43d0, type: 3}
+  - name: sfx_power_down
+    clip: {fileID: 8300000, guid: 6faf03b0035effe489151add24140173, type: 3}
+  - name: sfx_shot_enemy
+    clip: {fileID: 8300000, guid: e698118de8db9b341a83672eebd8b683, type: 3}
+  - name: sfx_spark_small
+    clip: {fileID: 8300000, guid: 1d9e805d62464f24d87639f6a8ea8fb0, type: 3}
+  - name: sfx_squeeze
+    clip: {fileID: 8300000, guid: 17696b7d80ff16643a9974928ddb7e08, type: 3}
+  - name: sfx_step
+    clip: {fileID: 8300000, guid: 2886f0413ca82ec4a95843c528ba1d60, type: 3}
+  - name: sfx_step_drag
+    clip: {fileID: 8300000, guid: d5e3630a3724c1a4ab6a67c57d13b75c, type: 3}
+  - name: sfx_text
+    clip: {fileID: 8300000, guid: 69cf0362394505545868830bf3b66f7d, type: 3}
+  - name: sfx_transfer
+    clip: {fileID: 8300000, guid: fddd7dfe546143d46bee2c34ea21fd03, type: 3}
+  - name: sfx_ui_cancel
+    clip: {fileID: 8300000, guid: c98c4c966b0b29e488eee8ada604ce58, type: 3}
+  - name: sfx_ui_move
+    clip: {fileID: 8300000, guid: 20599788f95b3fc45b32365ba9df4ae3, type: 3}
+  - name: sfx_ui_no
+    clip: {fileID: 8300000, guid: f7aee2806e2bdbb40a0b1c7895feb91a, type: 3}
+  - name: sfx_ui_ok
+    clip: {fileID: 8300000, guid: ec84b7badc890b246bf8405274577ce5, type: 3}
+  - name: sfx_whip
+    clip: {fileID: 8300000, guid: b8fb437358a30b047ad230dde94a3fc0, type: 3}
+  - name: sfx_window_pop
+    clip: {fileID: 8300000, guid: b8a0414ef83bf554097b7cf2f8361c0a, type: 3}
+  - name: sfx_wire_arc
+    clip: {fileID: 8300000, guid: be31cd901f668bd48b9549e3c605ffb5, type: 3}
+  - name: sfx_zap_shot
+    clip: {fileID: 8300000, guid: af7fd2b643204a54f8c9e93bdb02034e, type: 3}
+  - name: amb_lab_alarm
+    clip: {fileID: 8300000, guid: 5b313e89f0a66ff47b29dcee9424477b, type: 3}
+  - name: sfx_alert
+    clip: {fileID: 8300000, guid: 8f44bb5e4cef796499ddeaffddb55544, type: 3}
+  - name: sfx_baton_hit
+    clip: {fileID: 8300000, guid: 6ae365f4e80891a459d5a761b25d7ad0, type: 3}
+  - name: sfx_bin_twitch
+    clip: {fileID: 8300000, guid: d939db12b6f7ff7489ebb39b9791aa3d, type: 3}
+  - name: sfx_broadcast
+    clip: {fileID: 8300000, guid: 38319b46d3f6f914883cbbdfdffbdd50, type: 3}
+  - name: sfx_bubble
+    clip: {fileID: 8300000, guid: a9456b2b7c24a884bbd0d84ff097c9f8, type: 3}
+  - name: sfx_clatter
+    clip: {fileID: 8300000, guid: d8f8a3ea46b34fd4691a16dcca2dc7cd, type: 3}
+  - name: sfx_dash
+    clip: {fileID: 8300000, guid: 22448aff574b93e4491a6011219e02bd, type: 3}
+  - name: sfx_discharge_small
+    clip: {fileID: 8300000, guid: ad266448ebb71df40aac0e80198b3c25, type: 3}
+  - name: sfx_dodge
+    clip: {fileID: 8300000, guid: 6129757dd369c3e4c9a15cbcb38ee089, type: 3}
+  - name: sfx_hurt
+    clip: {fileID: 8300000, guid: c3cfd0cb192ac014e8d4efefb9825500, type: 3}
+  - name: sfx_light_on
+    clip: {fileID: 8300000, guid: b1b2b27c075ab3c4ab6267d9f9cde4c0, type: 3}
+  - name: sfx_robot_hit
+    clip: {fileID: 8300000, guid: 63a8eb91952a7374c8747fc84ac50bd2, type: 3}
+  - name: sfx_suspect
+    clip: {fileID: 8300000, guid: e8104cd6c04c7444da985ecf995d75f9, type: 3}
+  - name: sfx_target_on
+    clip: {fileID: 8300000, guid: 689d44741115b0949af4da7699b50180, type: 3}
+  - name: sfx_zap
+    clip: {fileID: 8300000, guid: 03d902ca1bd76524e9da135dfa41d919, type: 3}
+  portraits:
+  - id: lu_angry_cry
+    sprite: {fileID: 21300000, guid: 1a139c337d95936448be50c6490d7a72, type: 3}
+  - id: lu_despair
+    sprite: {fileID: 21300000, guid: 46bc9f6171e4e4048bdaa7fd3fd37592, type: 3}
+  - id: lu_determined
+    sprite: {fileID: 21300000, guid: e691ec16487cd6640b89594dd01a3583, type: 3}
+  - id: lu_neutral
+    sprite: {fileID: 21300000, guid: f8dff262e0b01424c88e106710477582, type: 3}
+  - id: lu_pained
+    sprite: {fileID: 21300000, guid: 78b690cd86c30b4439d10187a4715962, type: 3}
+  - id: lu_sad
+    sprite: {fileID: 21300000, guid: 9ba2b38ed3605584e871236a3e575c9c, type: 3}
+  - id: lu_scared
+    sprite: {fileID: 21300000, guid: 3d6d5e677b5f4174b988c7991ba378f1, type: 3}
+  - id: lu_smile
+    sprite: {fileID: 21300000, guid: 6c0b26a599c8a594da56ac03abe92bb8, type: 3}
+  - id: lu_surprised
+    sprite: {fileID: 21300000, guid: d1a7b37e342138645a71caf7b05d90a7, type: 3}
+  - id: researcher2_neutral
+    sprite: {fileID: 21300000, guid: ec55ad50979fa5b458fe5127497a4e63, type: 3}
+  - id: researcher2_smirk
+    sprite: {fileID: 21300000, guid: a29f2e529f3857e43971e1382084f314, type: 3}
+  - id: researcher2_surprised
+    sprite: {fileID: 21300000, guid: 15dcbdb61c50fee45b4610b0e5d8ca99, type: 3}
+  - id: researcher_neutral
+    sprite: {fileID: 21300000, guid: 2ab4bcf1b0f2bfb4e8389000245b36d8, type: 3}
+  - id: researcher_smile
+    sprite: {fileID: 21300000, guid: 3bcb1daaece1af54b8c28ca45d18fe09, type: 3}
+  - id: researcher_smirk
+    sprite: {fileID: 21300000, guid: 30d75f32505c9bf47ab32bf8143abac2, type: 3}
+  - id: venelle_blank
+    sprite: {fileID: 21300000, guid: 9418335b36e714142ad9edaeb49e51b6, type: 3}
+  - id: venelle_confused
+    sprite: {fileID: 21300000, guid: 67b4a9178bf957a47abc9a0adf7ebeb8, type: 3}
+  - id: venelle_excited
+    sprite: {fileID: 21300000, guid: fc7111df74821f640ac6ff4b77f646e7, type: 3}
+  - id: venelle_gentle
+    sprite: {fileID: 21300000, guid: 09c4615d5a3456f42aaba76c48149a80, type: 3}
+  - id: venelle_quiet
+    sprite: {fileID: 21300000, guid: be41d31cff26b5f4f80e2e9606ffe848, type: 3}
+  - id: f_determined
+    sprite: {fileID: 21300000, guid: e9af7438c29823640854f88c8379d19c, type: 3}
+  - id: f_gentle
+    sprite: {fileID: 21300000, guid: dedc31c6cb9fda8428b538c745b7dd0d, type: 3}
+  - id: f_neutral
+    sprite: {fileID: 21300000, guid: bb7c388b9f0619942bf5ec6cf2a47811, type: 3}
+  - id: kid008_neutral
+    sprite: {fileID: 21300000, guid: 40db848cdfe46f5479d64fa3c5912c0a, type: 3}
+  - id: kid008_sad
+    sprite: {fileID: 21300000, guid: d7b33035839737c46b81d6267c8df8f7, type: 3}
+  - id: kid008_smile
+    sprite: {fileID: 21300000, guid: 75fc6e6886ea7ab4aa10d0a139779999, type: 3}
+  - id: kid008_surprised
+    sprite: {fileID: 21300000, guid: 471efe9791e04d64bb6ad6550eaf15de, type: 3}
+  - id: survivor_neutral
+    sprite: {fileID: 21300000, guid: 0e9a4f18c5447c64aa572751961bbee6, type: 3}
+  - id: survivor_scared
+    sprite: {fileID: 21300000, guid: 601767cb418109e46bb7894d2ebd25f2, type: 3}
+  - id: aurelius_determined
+    sprite: {fileID: 21300000, guid: 955e743671293b3488a97119a067b76a, type: 3}
+  - id: aurelius_gentle
+    sprite: {fileID: 21300000, guid: 540a57759c6592b48969728484138d9d, type: 3}
+  - id: aurelius_pained
+    sprite: {fileID: 21300000, guid: be958eafa3ed4f64ebcea8e1f5048eb2, type: 3}
+  - id: edward_quiet
+    sprite: {fileID: 21300000, guid: d01197fce637dde4ea7cea9ed58e22e2, type: 3}
+  - id: lacrimosa_gentle
+    sprite: {fileID: 21300000, guid: 999443e54f8c6f04aaf630ceffae7bf2, type: 3}
+  - id: lacrimosa_pained
+    sprite: {fileID: 21300000, guid: 189671311a1f39c4595acdb9cbd2d044, type: 3}
+  - id: lacrimosa_quiet
+    sprite: {fileID: 21300000, guid: 088f4066a6189e345813d2b7a881ee49, type: 3}
+  - id: lacrimosa_sad
+    sprite: {fileID: 21300000, guid: ce6a8f4f92e76ab439ddaaccb2825fed, type: 3}
+  - id: meilin_determined
+    sprite: {fileID: 21300000, guid: 8b2ca722de5c2de4caf7dc9c663d2435, type: 3}
+  - id: meilin_sad
+    sprite: {fileID: 21300000, guid: afca1d83eee262f48a613eda778c26f6, type: 3}
+  - id: meilin_scared
+    sprite: {fileID: 21300000, guid: 006a93a91ce52294c880c1fec0309620, type: 3}
+  - id: meilin_smile
+    sprite: {fileID: 21300000, guid: 11ec553daf8002b4db764e8e1e4ec0f7, type: 3}
+  - id: meilin_surprised
+    sprite: {fileID: 21300000, guid: ebc261e9d4c67714093865f54179e3c9, type: 3}
+  - id: member_neutral
+    sprite: {fileID: 21300000, guid: 961841b4f072950449585356e67e84f0, type: 3}
+  - id: raviel_neutral
+    sprite: {fileID: 21300000, guid: 905d1fbc431df4f4399748440595007f, type: 3}
+  - id: raviel_pained
+    sprite: {fileID: 21300000, guid: 6f6abfeaf4ab82946b3c48016062aa7e, type: 3}
+  - id: raviel_sad
+    sprite: {fileID: 21300000, guid: f02bc249f6f04fb41993fcd613e22032, type: 3}
+  - id: raviel_smile
+    sprite: {fileID: 21300000, guid: ae666cfb37903b243802bf3e78f92c68, type: 3}
+  - id: raviel_smirk
+    sprite: {fileID: 21300000, guid: 3df1fffaab5cc714daf1af518c627938, type: 3}
+  - id: raviel_surprised
+    sprite: {fileID: 21300000, guid: a0205b5d53273614196dc27674b81e87, type: 3}
+  characters:
+  - {fileID: 11400000, guid: 5a606ec067a737449a8913cd422d419c, type: 2}
+  - {fileID: 11400000, guid: c93c09e49bacfea4d8b7d39791c84802, type: 2}
+  - {fileID: 11400000, guid: 75e25c44b9024004699f2d7e79696162, type: 2}
+  - {fileID: 11400000, guid: 70c0b81e5cc19024aa3b1a89c30a1a28, type: 2}
+  - {fileID: 11400000, guid: 9168a60a88fef5445a7ee5d00ad1c6fb, type: 2}
+  - {fileID: 11400000, guid: bf84d8c57ec670a42a4abceca9c39b26, type: 2}
+  - {fileID: 11400000, guid: 2fac2d76fd86ebc4a8639439df395c71, type: 2}
+  - {fileID: 11400000, guid: bbba1150fe363e14097579a7a9559c94, type: 2}
+  - {fileID: 11400000, guid: 1f7259721fbc1bb41baf9332cd24fded, type: 2}
+  - {fileID: 11400000, guid: e35e37716c21f3a49b2fd642f3b06d24, type: 2}
+  - {fileID: 11400000, guid: 398b97f23f8e836408e7e544ad6dd1a6, type: 2}
+  - {fileID: 11400000, guid: b898fa12bf3b82a4794ab1bed94ea398, type: 2}
+  - {fileID: 11400000, guid: fec6392f302a9e94cbd4f1938d944c51, type: 2}
+  - {fileID: 11400000, guid: 15124d49281c13b4ca0dc6720911fbb9, type: 2}
+  - {fileID: 11400000, guid: 2f83feb7aabc83f488829c105935e333, type: 2}
+  - {fileID: 11400000, guid: f1ea320e0b76dbb4ca88d5311ba65526, type: 2}
+  - {fileID: 11400000, guid: 155516dd87e6dd7468fdfd8fdbfdec06, type: 2}
+  - {fileID: 11400000, guid: 1af8733516aa3ef4ea922cbbe2787a85, type: 2}
+  - {fileID: 11400000, guid: 40b979760344d2648ad81b657af56abd, type: 2}
+  - {fileID: 11400000, guid: fd8bd4f0cdd3e834997c509b8ebd360e, type: 2}
+  - {fileID: 11400000, guid: c8093317f0dc2714fbc4059a430a594e, type: 2}
+  - {fileID: 11400000, guid: e5dd9f9bf09d2ae4b85d410552d7e457, type: 2}
+  - {fileID: 11400000, guid: 0d3e5ab45d1afc04eaf99a09c6e0498a, type: 2}
+  - {fileID: 11400000, guid: 56b4dc2fbfc6f8c43b1594526df129a6, type: 2}
+  spriteSets:
+  - name: FX_Spark
+    frames:
+    - {fileID: 1658362012668754854, guid: 67477e5720bb753429d3c4127732c8bf, type: 3}
+    - {fileID: 1395144537, guid: 67477e5720bb753429d3c4127732c8bf, type: 3}
+    - {fileID: -527843013, guid: 67477e5720bb753429d3c4127732c8bf, type: 3}
+    - {fileID: 1959034848, guid: 67477e5720bb753429d3c4127732c8bf, type: 3}
+    - {fileID: 1475714044, guid: 67477e5720bb753429d3c4127732c8bf, type: 3}
+    - {fileID: 1571089633, guid: 67477e5720bb753429d3c4127732c8bf, type: 3}
+    fps: 16
+    loop: 0
+  - name: FX_Bolt
+    frames:
+    - {fileID: -7980696071224582931, guid: ad33ea2d314aea14884973c90207b928, type: 3}
+    - {fileID: 45043792, guid: ad33ea2d314aea14884973c90207b928, type: 3}
+    fps: 16
+    loop: 0
+  - name: FX_Explosion
+    frames:
+    - {fileID: 5281770958030522805, guid: 97face45b9ac6bd4899c0b03f1727bb3, type: 3}
+    - {fileID: -1415135025, guid: 97face45b9ac6bd4899c0b03f1727bb3, type: 3}
+    - {fileID: 2023431125, guid: 97face45b9ac6bd4899c0b03f1727bb3, type: 3}
+    - {fileID: 1631501020, guid: 97face45b9ac6bd4899c0b03f1727bb3, type: 3}
+    - {fileID: 955873483, guid: 97face45b9ac6bd4899c0b03f1727bb3, type: 3}
+    - {fileID: -1206251380, guid: 97face45b9ac6bd4899c0b03f1727bb3, type: 3}
+    fps: 16
+    loop: 0
+  - name: FX_Arc
+    frames:
+    - {fileID: -3835067407002920690, guid: 77bf393ec81c4754ea19a074c7794529, type: 3}
+    - {fileID: 1455560068, guid: 77bf393ec81c4754ea19a074c7794529, type: 3}
+    - {fileID: -1584180521, guid: 77bf393ec81c4754ea19a074c7794529, type: 3}
+    fps: 16
+    loop: 0
+  - name: FX_Heal
+    frames:
+    - {fileID: 8184526371914192223, guid: 84a9aee0b1c6a0547a50f500b1c0eade, type: 3}
+    - {fileID: -305017130, guid: 84a9aee0b1c6a0547a50f500b1c0eade, type: 3}
+    - {fileID: 1374449113, guid: 84a9aee0b1c6a0547a50f500b1c0eade, type: 3}
+    - {fileID: 1605920170, guid: 84a9aee0b1c6a0547a50f500b1c0eade, type: 3}
+    fps: 16
+    loop: 0
+  - name: FX_Acid
+    frames:
+    - {fileID: 6461216293060107419, guid: 381e0d0a0da4eff4c803fa8ec4c408ce, type: 3}
+    - {fileID: 162555676, guid: 381e0d0a0da4eff4c803fa8ec4c408ce, type: 3}
+    - {fileID: 1775613540, guid: 381e0d0a0da4eff4c803fa8ec4c408ce, type: 3}
+    - {fileID: -1022809444, guid: 381e0d0a0da4eff4c803fa8ec4c408ce, type: 3}
+    fps: 16
+    loop: 0
+  - name: FX_LightDot
+    frames:
+    - {fileID: 3945023326260252906, guid: 778778d2e94f5b245a2b86e2c87b7e11, type: 3}
+    - {fileID: 425257557, guid: 778778d2e94f5b245a2b86e2c87b7e11, type: 3}
+    - {fileID: 1903637745, guid: 778778d2e94f5b245a2b86e2c87b7e11, type: 3}
+    - {fileID: 280428286, guid: 778778d2e94f5b245a2b86e2c87b7e11, type: 3}
+    fps: 12
+    loop: 0
+  - name: FX_Glow
+    frames:
+    - {fileID: -1676003886135700848, guid: 25a359ae0d057a743a15d24aa9ea7af7, type: 3}
+    fps: 12
+    loop: 0
+  - name: FX_GlowSoft
+    frames:
+    - {fileID: -8062933556380236947, guid: 88563ce4d95f3df4f9255d7c68e0ad27, type: 3}
+    fps: 12
+    loop: 0
+  - name: FX_Smoke
+    frames:
+    - {fileID: 7159448821300505997, guid: 17195cf46b099b54085433896934aa86, type: 3}
+    - {fileID: -1314715648, guid: 17195cf46b099b54085433896934aa86, type: 3}
+    - {fileID: 1993624761, guid: 17195cf46b099b54085433896934aa86, type: 3}
+    - {fileID: 1698124150, guid: 17195cf46b099b54085433896934aa86, type: 3}
+    fps: 6
+    loop: 0
+  - name: FX_Fire
+    frames:
+    - {fileID: 8302759681416707426, guid: 25926651cb1de3940bd807461c9bae4a, type: 3}
+    - {fileID: 39074220, guid: 25926651cb1de3940bd807461c9bae4a, type: 3}
+    - {fileID: -913048579, guid: 25926651cb1de3940bd807461c9bae4a, type: 3}
+    - {fileID: -538910987, guid: 25926651cb1de3940bd807461c9bae4a, type: 3}
+    - {fileID: -1842672227, guid: 25926651cb1de3940bd807461c9bae4a, type: 3}
+    - {fileID: -1587392148, guid: 25926651cb1de3940bd807461c9bae4a, type: 3}
+    fps: 12
+    loop: 0
+  - name: FX_FireBig
+    frames:
+    - {fileID: 8332633594062695138, guid: 78ba959f036d0a14083f0022ec4c616b, type: 3}
+    - {fileID: 1154380408, guid: 78ba959f036d0a14083f0022ec4c616b, type: 3}
+    - {fileID: -19372286, guid: 78ba959f036d0a14083f0022ec4c616b, type: 3}
+    - {fileID: -1100085193, guid: 78ba959f036d0a14083f0022ec4c616b, type: 3}
+    - {fileID: -1621996510, guid: 78ba959f036d0a14083f0022ec4c616b, type: 3}
+    - {fileID: 1490044669, guid: 78ba959f036d0a14083f0022ec4c616b, type: 3}
+    fps: 12
+    loop: 0
+  - name: FX_Ember
+    frames:
+    - {fileID: 4299154530855007468, guid: ee1a74756651b234484c324ba546bae3, type: 3}
+    fps: 12
+    loop: 0
+  - name: FX_Ash
+    frames:
+    - {fileID: 59169735109481333, guid: f572a12f81120064e8e288ffc2783faf, type: 3}
+    fps: 12
+    loop: 0
+  - name: FX_Dust
+    frames:
+    - {fileID: 1935869153794023740, guid: 9845d8f9464a81440a51f8175f8c2252, type: 3}
+    fps: 12
+    loop: 0
+  - name: FX_AcidSplash
+    frames:
+    - {fileID: -3882844511511283001, guid: d8c6c95f11b874141b4b3d6025a8d0f0, type: 3}
+    - {fileID: -1000635533, guid: d8c6c95f11b874141b4b3d6025a8d0f0, type: 3}
+    - {fileID: 1652217096, guid: d8c6c95f11b874141b4b3d6025a8d0f0, type: 3}
+    - {fileID: -1265562756, guid: d8c6c95f11b874141b4b3d6025a8d0f0, type: 3}
+    - {fileID: 2102013824, guid: d8c6c95f11b874141b4b3d6025a8d0f0, type: 3}
+    fps: 14
+    loop: 0
+  - name: FX_Bubbles
+    frames:
+    - {fileID: 8420297799857303511, guid: d1a1c5ad7a1931e43946ca5508c1a71b, type: 3}
+    - {fileID: -1296214274, guid: d1a1c5ad7a1931e43946ca5508c1a71b, type: 3}
+    - {fileID: 1020646241, guid: d1a1c5ad7a1931e43946ca5508c1a71b, type: 3}
+    - {fileID: -1941999951, guid: d1a1c5ad7a1931e43946ca5508c1a71b, type: 3}
+    fps: 8
+    loop: 0
+  - name: FX_ReactBurst
+    frames:
+    - {fileID: -131930740622051929, guid: 52a61f39c8304094da5826ab13b16230, type: 3}
+    - {fileID: 1641449083, guid: 52a61f39c8304094da5826ab13b16230, type: 3}
+    - {fileID: 108740732, guid: 52a61f39c8304094da5826ab13b16230, type: 3}
+    - {fileID: 1718805180, guid: 52a61f39c8304094da5826ab13b16230, type: 3}
+    - {fileID: -1217175174, guid: 52a61f39c8304094da5826ab13b16230, type: 3}
+    fps: 14
+    loop: 0
+  - name: FX_ToxicMist
+    frames:
+    - {fileID: -6974478429768296867, guid: 06b9984446a346f4db28dae426bfd731, type: 3}
+    - {fileID: 1600227251, guid: 06b9984446a346f4db28dae426bfd731, type: 3}
+    - {fileID: -1369376369, guid: 06b9984446a346f4db28dae426bfd731, type: 3}
+    - {fileID: 449009215, guid: 06b9984446a346f4db28dae426bfd731, type: 3}
+    fps: 5
+    loop: 0
+  - name: FX_Flask
+    frames:
+    - {fileID: 2175965931195413085, guid: af903db04411c2846b97d1d313475ec5, type: 3}
+    - {fileID: -2021680637, guid: af903db04411c2846b97d1d313475ec5, type: 3}
+    - {fileID: -196014276, guid: af903db04411c2846b97d1d313475ec5, type: 3}
+    - {fileID: -21307036, guid: af903db04411c2846b97d1d313475ec5, type: 3}
+    fps: 14
+    loop: 0
+  - name: FX_AcidFan
+    frames:
+    - {fileID: 3208236849985946523, guid: a27c0fd641a5e3646b6eab264cca3b59, type: 3}
+    - {fileID: 459643513, guid: a27c0fd641a5e3646b6eab264cca3b59, type: 3}
+    - {fileID: 1998919912, guid: a27c0fd641a5e3646b6eab264cca3b59, type: 3}
+    - {fileID: -372006533, guid: a27c0fd641a5e3646b6eab264cca3b59, type: 3}
+    fps: 14
+    loop: 0
+  - name: FX_PuddleAcid
+    frames:
+    - {fileID: -7274917389232813826, guid: b7e3250f18ff8a94aa19bb4f0525ad77, type: 3}
+    - {fileID: 244407688, guid: b7e3250f18ff8a94aa19bb4f0525ad77, type: 3}
+    - {fileID: 1590512361, guid: b7e3250f18ff8a94aa19bb4f0525ad77, type: 3}
+    fps: 14
+    loop: 0
+  - name: UI_Prev_Cctv
+    frames:
+    - {fileID: 1680975544764740075, guid: f57ce8e857ab5d54eb6c542544b53bd3, type: 3}
+    fps: 1
+    loop: 0
+  - name: UI_Prev_CctvOff
+    frames:
+    - {fileID: -7236401412933962394, guid: d6b70e3109a1f5f4a915b7e3385b58ef, type: 3}
+    fps: 1
+    loop: 0
+  - name: UI_Prev_Dummy
+    frames:
+    - {fileID: -3091714990874711139, guid: 5a23614ac7797c848b8063ba052f6623, type: 3}
+    fps: 1
+    loop: 0
+  - name: UI_Prev_Panel
+    frames:
+    - {fileID: 6178479232083781896, guid: 4f3875a602fb5f844992315a681b3b12, type: 3}
+    fps: 1
+    loop: 0
+  - name: UI_Prev_Socket
+    frames:
+    - {fileID: 2652821956053550000, guid: 55ae83b2af9f1644b92a63bc1201b8e8, type: 3}
+    fps: 1
+    loop: 0
+  - name: UI_Prev_Source
+    frames:
+    - {fileID: -3543781744305244724, guid: ba9a9e46a8b194543b7dc1c3cd14b28b, type: 3}
+    fps: 1
+    loop: 0
+  - name: UI_Skill_jam
+    frames:
+    - {fileID: -1990072538075783936, guid: f87731223a2260c43b0f96a70a3cee51, type: 3}
+    fps: 1
+    loop: 0
+  - name: UI_Skill_pull
+    frames:
+    - {fileID: 994600092163938430, guid: 10ee518145f70f447be0bd036cda7485, type: 3}
+    fps: 1
+    loop: 0
+  - name: UI_Skill_spark_shot
+    frames:
+    - {fileID: -8492714786980334616, guid: 2f6cfd20da5263d469c12048c66296f8, type: 3}
+    fps: 1
+    loop: 0
+  - name: UI_Skill_tok
+    frames:
+    - {fileID: 1930927712543416973, guid: e6f381e442e7f674d855b9e792f30558, type: 3}
+    fps: 1
+    loop: 0
+  - name: UI_Skill_wire
+    frames:
+    - {fileID: 5065899087580562018, guid: fadfd4a5941d03441a71abafbde295e3, type: 3}
+    fps: 1
+    loop: 0
+  - name: U_Barricade
+    frames:
+    - {fileID: -8342474237222127412, guid: 9b9c75fa9ed68114a859e0f98609d7ad, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Belt
+    frames:
+    - {fileID: -8365561104923639830, guid: 0ef0188ab9e116e4abbd15ef4c954bde, type: 3}
+    - {fileID: 412712163, guid: 0ef0188ab9e116e4abbd15ef4c954bde, type: 3}
+    - {fileID: -1273313689, guid: 0ef0188ab9e116e4abbd15ef4c954bde, type: 3}
+    - {fileID: 98170772, guid: 0ef0188ab9e116e4abbd15ef4c954bde, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_BeltCrate
+    frames:
+    - {fileID: 2018884667230767089, guid: d478710335188674da9cae7368103b01, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_BeltCtrl
+    frames:
+    - {fileID: -4818568672460691645, guid: b98830621e95d434d88e2d70ea75b4bd, type: 3}
+    - {fileID: 59092335, guid: b98830621e95d434d88e2d70ea75b4bd, type: 3}
+    - {fileID: -844294682, guid: b98830621e95d434d88e2d70ea75b4bd, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Breaker
+    frames:
+    - {fileID: 4523636686146149602, guid: 990813a2f7fb6984d9f88fa5cc7d6e24, type: 3}
+    - {fileID: 1302429804, guid: 990813a2f7fb6984d9f88fa5cc7d6e24, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_ChalkLines
+    frames:
+    - {fileID: -1654250941746570639, guid: 441e1e7e8a03598478c97abfb9861e2a, type: 3}
+    - {fileID: -1526557008, guid: 441e1e7e8a03598478c97abfb9861e2a, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_ChocoBox
+    frames:
+    - {fileID: 8842353371142877719, guid: ea7bd985b15229e41b56ee1778f10b09, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_CrateBed
+    frames:
+    - {fileID: 5759851974883034406, guid: 48b8d92bd8987744394302515325ddca, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_DormBed
+    frames:
+    - {fileID: 3976753678732959563, guid: 1f6f8d6f4415d994baef07305721b22c, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_DormDesk
+    frames:
+    - {fileID: -4683240360467309256, guid: 69434404430b9824fb97f25e0e392e2e, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_HomeDoor
+    frames:
+    - {fileID: 8241361404117472974, guid: 65420e481d803fc499288bb1b4be9381, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Jug
+    frames:
+    - {fileID: -8238287550724067252, guid: 83424fcb49d5a7c4496d1ac1bcb791ba, type: 3}
+    - {fileID: -980973942, guid: 83424fcb49d5a7c4496d1ac1bcb791ba, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Lantern
+    frames:
+    - {fileID: -3750778794721268995, guid: 051117ec55f4abc4a97bc0abf16b7ad8, type: 3}
+    - {fileID: 826698378, guid: 051117ec55f4abc4a97bc0abf16b7ad8, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_LaundryLine
+    frames:
+    - {fileID: -2116244909391611297, guid: 4925f506a3c205642912933b00e56f45, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Letter
+    frames:
+    - {fileID: -938031271674523155, guid: f6b203e84e48f5d459d70a04c1b80df0, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_LiftDeck
+    frames:
+    - {fileID: 8657505444062815139, guid: c1aa419c11c9b9247aa727d5a5e3e5f7, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_LiftPanel
+    frames:
+    - {fileID: 2272062476045126603, guid: 40780e48b6bbee641aefbcd61411d68c, type: 3}
+    - {fileID: 998557244, guid: 40780e48b6bbee641aefbcd61411d68c, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_LiftShaft
+    frames:
+    - {fileID: 1993379051863555788, guid: 9ba57707abee8a047897352bed0613e2, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_OtherOutfits
+    frames:
+    - {fileID: 15155436695436732, guid: 372a87320bf7ecd429813c92733a53fe, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Part
+    frames:
+    - {fileID: -8633633660502215937, guid: 03653ddcecdbfb747bdde900aab86af6, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_PartShelf
+    frames:
+    - {fileID: 3294768775320192318, guid: b8480359f0eac5340939b0e2ac6231e0, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Photo
+    frames:
+    - {fileID: -1155266564461651864, guid: 158e3c34294e8834ea6cb85be336d044, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_PipeH
+    frames:
+    - {fileID: -4571744107808170538, guid: 160eaeba279afe24aaea4a77caf48183, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Pump
+    frames:
+    - {fileID: 220545296027497445, guid: 300b0fb38c0cb7d4fb7d807e5f80e588, type: 3}
+    - {fileID: 796143505, guid: 300b0fb38c0cb7d4fb7d807e5f80e588, type: 3}
+    - {fileID: 1120002472, guid: 300b0fb38c0cb7d4fb7d807e5f80e588, type: 3}
+    - {fileID: -1903973215, guid: 300b0fb38c0cb7d4fb7d807e5f80e588, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Rail
+    frames:
+    - {fileID: 992917328716297018, guid: e82a4e747bcf796488cded94366a3ae7, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_SealShutter
+    frames:
+    - {fileID: 8760597548094703049, guid: b1a6f5893368c76488ca846876c3ffa3, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_StallA
+    frames:
+    - {fileID: 7879311684607969443, guid: 27b497d65325bf44c87dca09895f6ada, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_StallB
+    frames:
+    - {fileID: -737602788519129559, guid: 8083816be8a9f6745af7a5112c835e54, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Stove
+    frames:
+    - {fileID: 2836934833411658723, guid: e70a0419d5e65744389087813c32b996, type: 3}
+    - {fileID: 1139188534, guid: e70a0419d5e65744389087813c32b996, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Tally
+    frames:
+    - {fileID: 8332268484979968791, guid: 035679cd433a1e047b3b72b788066c85, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Tarp
+    frames:
+    - {fileID: 369727509417682475, guid: a500fa45f75b08c4e845caa09a5d43e2, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_TestRig
+    frames:
+    - {fileID: 8936616462223501868, guid: 50244063eac9b51459e575feb10ee0e6, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_TrialFlyer
+    frames:
+    - {fileID: -9195000425078061529, guid: 034232df63d7ef04f80c3c15e34b367f, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_TwinOutfits
+    frames:
+    - {fileID: -2919367263431518726, guid: 614ddd02e3025e342b0e23d05c165f22, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Valve
+    frames:
+    - {fileID: -6978270534441501330, guid: 260d0183c9b29f74f83c8bf95d3d6cd0, type: 3}
+    - {fileID: -1274539620, guid: 260d0183c9b29f74f83c8bf95d3d6cd0, type: 3}
+    - {fileID: 2096675463, guid: 260d0183c9b29f74f83c8bf95d3d6cd0, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Washer
+    frames:
+    - {fileID: -2836370800595818689, guid: 2c6b1275b7b110c45adf165131f7889b, type: 3}
+    - {fileID: 384541044, guid: 2c6b1275b7b110c45adf165131f7889b, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_WaterFill
+    frames:
+    - {fileID: 4851846503395877224, guid: 3f669de9407b5054fa8bdda38d421292, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_WaterTop
+    frames:
+    - {fileID: 270031777352744162, guid: 6632e1351c4374b4ab9ac125c6602624, type: 3}
+    - {fileID: 1566801628, guid: 6632e1351c4374b4ab9ac125c6602624, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_WaterTower
+    frames:
+    - {fileID: 3799916240915876794, guid: 5581dc148967873469454f77f202bfd1, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Wrappers
+    frames:
+    - {fileID: 8250195376404751899, guid: a1184f5b0bfe9de4bae3c73888b8cd0b, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_BoardStatus
+    frames:
+    - {fileID: 8943336524840329063, guid: 94c5ab9234462ad439bbfd38a8bba466, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_BoothLock
+    frames:
+    - {fileID: -139953651103801017, guid: aed1815a814aba44ba6dbf2c4f20e872, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Brake
+    frames:
+    - {fileID: 5978017898794537778, guid: 74427bb1a6ca530458e96366f7628557, type: 3}
+    - {fileID: 1350102537, guid: 74427bb1a6ca530458e96366f7628557, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_BrokenTag
+    frames:
+    - {fileID: 6267902707655126569, guid: ee6ca00bd3a59f54faaa9e58c4aafd37, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Bulkhead
+    frames:
+    - {fileID: -7308195663971174404, guid: d6ea5d9533451c740b0a6c49123327d2, type: 3}
+    - {fileID: 64706954, guid: d6ea5d9533451c740b0a6c49123327d2, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_CallBoard
+    frames:
+    - {fileID: -2506008956628048460, guid: 8247ca5caa96d104082e5698a316ba30, type: 3}
+    - {fileID: 1056920929, guid: 8247ca5caa96d104082e5698a316ba30, type: 3}
+    - {fileID: -1034638293, guid: 8247ca5caa96d104082e5698a316ba30, type: 3}
+    - {fileID: -1932613297, guid: 8247ca5caa96d104082e5698a316ba30, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Capacitor
+    frames:
+    - {fileID: -3234024429546700304, guid: a95753f217a0d1e4ba1e42054a8e9412, type: 3}
+    - {fileID: -442975192, guid: a95753f217a0d1e4ba1e42054a8e9412, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Capsule
+    frames:
+    - {fileID: -3789589212117094939, guid: f97a6b14ea225b643934f7bb00f4c459, type: 3}
+    - {fileID: -2054096785, guid: f97a6b14ea225b643934f7bb00f4c459, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_CaptureTerm
+    frames:
+    - {fileID: 1662375182841528568, guid: a35a9af186fc26748ae0861863ef7993, type: 3}
+    - {fileID: -911651028, guid: a35a9af186fc26748ae0861863ef7993, type: 3}
+    - {fileID: -1125171079, guid: a35a9af186fc26748ae0861863ef7993, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_CellBars
+    frames:
+    - {fileID: -4399949341871102358, guid: 06f08bf163ecf6b4ab7a5baaeebab047, type: 3}
+    - {fileID: -1236777109, guid: 06f08bf163ecf6b4ab7a5baaeebab047, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_CellPanel
+    frames:
+    - {fileID: 464144392433444023, guid: bf9be397cb28b544f90372d0fbd46e27, type: 3}
+    - {fileID: 1672253815, guid: bf9be397cb28b544f90372d0fbd46e27, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_ChildPhoto
+    frames:
+    - {fileID: -7334381762248454077, guid: 3124bc90eda1a5649b5d1e7d0496b590, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Claw
+    frames:
+    - {fileID: -199374617679726893, guid: a8bf9ed02feb2674b934eca040dc3c0d, type: 3}
+    - {fileID: -2039649822, guid: a8bf9ed02feb2674b934eca040dc3c0d, type: 3}
+    - {fileID: 762839664, guid: a8bf9ed02feb2674b934eca040dc3c0d, type: 3}
+    - {fileID: -747226244, guid: a8bf9ed02feb2674b934eca040dc3c0d, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_ClawRail
+    frames:
+    - {fileID: -6293611936392740711, guid: d70c1d2411850e845a0a12dc24b7296c, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_CommandChart
+    frames:
+    - {fileID: 404811092882032166, guid: 4da0cc73bfff33d4285834a85f29eb86, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_ConductFloor
+    frames:
+    - {fileID: 5797077284732511021, guid: a1881064bf3116b40a998946e0cae595, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_CoolPipe
+    frames:
+    - {fileID: 1954104618306389561, guid: 18b46c57810129d45931bb27b0d957bd, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Coupling
+    frames:
+    - {fileID: -2691429524079008194, guid: fb7e0986c4ad21646a127acd20922456, type: 3}
+    - {fileID: 142317102, guid: fb7e0986c4ad21646a127acd20922456, type: 3}
+    - {fileID: -1870854342, guid: fb7e0986c4ad21646a127acd20922456, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Cups
+    frames:
+    - {fileID: 7552053351884848209, guid: ac0b6c8ef5cf6fe489f2de9a01e5afc5, type: 3}
+    - {fileID: -1510506268, guid: ac0b6c8ef5cf6fe489f2de9a01e5afc5, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Doll
+    frames:
+    - {fileID: 3632407718564489491, guid: f5af5e0306983e2488ede2095a8269ba, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Escort
+    frames:
+    - {fileID: 7572635575735240759, guid: d8e4692262b686c4594080992f0fc3b1, type: 3}
+    - {fileID: -1918673380, guid: d8e4692262b686c4594080992f0fc3b1, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_IconBin
+    frames:
+    - {fileID: 5442167485416342624, guid: 05f2b53f1273fcd41bf77e02299629b6, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_IconDoc
+    frames:
+    - {fileID: 2988826596677631012, guid: 833db2c6528ba024da038646b76abe4e, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_IconFolder
+    frames:
+    - {fileID: -6279587485830962483, guid: eebd84d4db9b42c4394bc0e6305ec252, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_IconGame
+    frames:
+    - {fileID: -1224810801408825831, guid: 5ee9b2f66e1cc3b4a833fb52a1060bd1, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Magnet
+    frames:
+    - {fileID: 4220153277277044934, guid: 7cb960efdccbef44f9e0b3ace822fc95, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_MaintTerm
+    frames:
+    - {fileID: -6682833447551393900, guid: 65c2342f172cc28459655dca5d1cdf9e, type: 3}
+    - {fileID: -1142589384, guid: 65c2342f172cc28459655dca5d1cdf9e, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Mic
+    frames:
+    - {fileID: 1726572101167438908, guid: b29ee75b240e8f84ba46807586e24458, type: 3}
+    - {fileID: -886839958, guid: b29ee75b240e8f84ba46807586e24458, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Mixer
+    frames:
+    - {fileID: -626514828313322729, guid: 4f910d7deef7f3448bb3a980f357ca42, type: 3}
+    - {fileID: 1912690494, guid: 4f910d7deef7f3448bb3a980f357ca42, type: 3}
+    - {fileID: 1623223177, guid: 4f910d7deef7f3448bb3a980f357ca42, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Monitor
+    frames:
+    - {fileID: -1855211432592341534, guid: 9f9bd04eec688ff4e9a6b7993a048068, type: 3}
+    - {fileID: 772966391, guid: 9f9bd04eec688ff4e9a6b7993a048068, type: 3}
+    - {fileID: 925845339, guid: 9f9bd04eec688ff4e9a6b7993a048068, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_PlanNotes
+    frames:
+    - {fileID: -6779789333661370178, guid: 98fa1514b97762e4b9d02153a67fbfc7, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Recovery
+    frames:
+    - {fileID: 4848387495472213955, guid: d1248fc03f4ea0a4cb7a42db15861112, type: 3}
+    - {fileID: 674723588, guid: d1248fc03f4ea0a4cb7a42db15861112, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Register
+    frames:
+    - {fileID: 168572726060193491, guid: 9381c3f0112fe304d837202caae4d916, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Roller
+    frames:
+    - {fileID: -7600245141985662227, guid: 3c129f1fa33d8494eb7dcdd301260486, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Rubble
+    frames:
+    - {fileID: -4812782185569394251, guid: fa982128d3f332c4aa26c1bd33aef2f3, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_ServerRack
+    frames:
+    - {fileID: 4707054233277773178, guid: 5f0b00ff64efdf54981bf1e751fbe553, type: 3}
+    - {fileID: 2024549133, guid: 5f0b00ff64efdf54981bf1e751fbe553, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Speaker
+    frames:
+    - {fileID: 4542852086580040711, guid: c96ee7c12b1d50d4dbad0b01fe4ef667, type: 3}
+    - {fileID: -1847613158, guid: c96ee7c12b1d50d4dbad0b01fe4ef667, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_StillHand
+    frames:
+    - {fileID: -1187353595836678290, guid: b90bc5160eddf6944b3fe5102f76b8c8, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Tape
+    frames:
+    - {fileID: -82552306619022961, guid: 2b39907ce8994c84c9ee17c0fccdb18a, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_TicketMachine
+    frames:
+    - {fileID: 6677061010731529644, guid: 351e3d8512c35df438bde4a67a9d6c54, type: 3}
+    fps: 4
+    loop: 0
+  - name: U_Truss
+    frames:
+    - {fileID: -6805014777329769926, guid: 2f8aa23ddf3941741a52be323e57085c, type: 3}
+    fps: 4
+    loop: 0
+  titleScene: Title
+  maps:
+  - id: P01
+    scene: P01_BurningVillage
+    title: "\uBD88\uD0C0\uB294 \uB9C8\uC744"
+  - id: P02
+    scene: P02_RuinedHouse
+    title: "\uBB34\uB108\uC9C4 \uC791\uC740 \uC9D1"
+  - id: P03
+    scene: P03_FriendDesktop
+    title: "\uCEF4\uD4E8\uD130 \uC548"
+  - id: C01
+    scene: C01_TankLab
+    title: "\uC2E4\uD5D8\uC2E4"
+  - id: C02
+    scene: C02_EscapeWing
+    title: "\uACA9\uB9AC \uC2E4\uD5D8\uB3D9 \uBCF5\uB3C4"
+  - id: C03
+    scene: C03_SpecimenArchive
+    title: "\uC124\uBE44\uC2E4 \xB7 \uC790\uB8CC\uC2E4"
+  - id: M09
+    scene: M09_StaffCafeteria
+    title: "\uC9C1\uC6D0 \uC2DD\uB2F9"
+  - id: C04
+    scene: C04_CargoBay
+    title: "\uD654\uBB3C \uC801\uC7AC\uC7A5"
+  - id: C05
+    scene: C05_CultureRoom
+    title: "\uBC30\uC591\uC2E4"
+  - id: C06
+    scene: C06_LongCorridor
+    title: "\uC5F0\uACB0 \uBCF5\uB3C4"
+  - id: M14
+    scene: M14_ChemGreenhouse
+    title: "\uC57D\uD488 \uC628\uC2E4"
+  - id: M13
+    scene: M13_MixingRoom
+    title: "\uD63C\uD569\uC2E4"
+  - id: M15
+    scene: M15_ObservationLounge
+    title: "\uAD00\uCC30 \uD734\uAC8C\uC2E4"
+  - id: M16
+    scene: M16_CargoLift
+    title: "\uD654\uBB3C \uC2B9\uAC15\uC7A5"
+  - id: M17
+    scene: M17_WasteShelter
+    title: "\uD3D0\uAE30\uC18C \uAC70\uCC98"
+  - id: M18
+    scene: M18_PumpRoom
+    title: "\uBB3C \uD38C\uD504\uC2E4"
+  - id: M19
+    scene: M19_JunkMarket
+    title: "\uD3D0\uD488 \uC2DC\uC7A5"
+  - id: M20
+    scene: M20_MaintTunnel
+    title: "\uC720\uC9C0\uBCF4\uC218 \uD130\uB110"
+  - id: M21
+    scene: M21_Workshop
+    title: "\uC815\uBE44 \uC791\uC5C5\uC7A5"
+  - id: M22
+    scene: M22_ConveyorHall
+    title: "\uCEE8\uBCA0\uC774\uC5B4 \uD640"
+  - id: M23
+    scene: M23_VerticalShaft
+    title: "\uC218\uC9C1 \uBC30\uC120\uD1B5\uB85C"
+  - id: M24
+    scene: M24_Laundry
+    title: "\uACF5\uB3D9 \uC138\uD0C1\uC2E4"
+  - id: M25
+    scene: M25_VenelleRoom
+    title: "\uC219\uC18C 3\uD638"
+  - id: M26
+    scene: M26_DormRoof
+    title: "\uAE30\uC219\uC0AC \uC625\uC0C1"
+  - id: M27
+    scene: M27_HoldingBlock
+    title: "\uC218\uC6A9\uB3D9"
+  - id: M28
+    scene: M28_ReceptionHall
+    title: "\uC811\uC218 \uD640"
+  - id: M29
+    scene: M29_CounselBooth
+    title: "\uC0C1\uB2F4 \uBD80\uC2A4"
+  - id: M30
+    scene: M30_VideoRoom
+    title: "\uC601\uC0C1\uC2E4"
+  - id: M31
+    scene: M31_ControlTower
+    title: "\uAD00\uC81C\uD0D1"
+  - id: M32
+    scene: M32_UpperCorridor
+    title: "\uC0C1\uCE35 \uD68C\uB791"
+  - id: M33
+    scene: M33_RavielRoom
+    title: "\uB77C\uBE44\uC5D8\uC758 \uBC29"
+  - id: M34
+    scene: M34_CommRoom
+    title: "\uD1B5\uC2E0\uC2E4"
+  - id: M35
+    scene: M35_SkyBridge
+    title: "\uC5F0\uACB0 \uAD50\uB7C9"
+  - id: M36
+    scene: M36_WaitingRoom
+    title: "\uB300\uAE30\uC2E4"
+  - id: M37
+    scene: M37_ResonanceHall
+    title: "\uACF5\uBA85 \uACF5\uC5F0\uC7A5"
+  - id: M38
+    scene: M38_RecordArchive
+    title: "\uB179\uC74C \uBCF4\uAD00\uC2E4"
+  - id: M39
+    scene: M39_ServerRoom
+    title: "\uC11C\uBC84\uC2E4"
+  - id: M40
+    scene: M40_CaptureTerminal
+    title: "\uD3EC\uD68D \uB2E8\uB9D0"
+  - id: M41
+    scene: M41_RecycleList
+    title: "\uD734\uC9C0\uD1B5 \uBAA9\uB85D"
+  - id: M42
+    scene: M42_BoardingLounge
+    title: "\uC2B9\uC120 \uB300\uAE30\uC2E4"
+  - id: M43
+    scene: M43_CapsuleCorridor
+    title: "\uCEA1\uC290 \uD68C\uB791"
+  - id: M44
+    scene: M44_TransferChamber
+    title: "\uC804\uC774 \uC7A5\uCE58\uC2E4"
+  - id: M45
+    scene: M45_CollapseWay
+    title: "\uBD95\uAD34 \uC5F0\uACB0\uB85C"
+  - id: M46
+    scene: M46_CollapsedCourt
+    title: "\uBB34\uB108\uC9C4 \uC911\uC815"
+  - id: M47
+    scene: M47_RubblePile
+    title: "\uC794\uD574 \uB354\uBBF8"
+  autosaveOnMapEnter: 1

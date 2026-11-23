@@ -1,0 +1,2676 @@
+{
+ "version": 1,
+ "note": "건물 배치 데이터 — Docs/BUILDING_LAYOUT_GUIDE.md. 현재는 GDD 기준 임시 배치.",
+ "maps": [
+  {
+   "id": "P01",
+   "scene": "P01_BurningVillage",
+   "name": "불타는 마을",
+   "chapter": "prologue",
+   "zone": "0 집과 마을",
+   "floor": "지상",
+   "goal": "연출 장면",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [],
+   "next": [
+    {
+     "map": "P02",
+     "label": "무너진 작은 집",
+     "cond": "연출"
+    }
+   ],
+   "spawns": [
+    "start"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "P02",
+   "scene": "P02_RuinedHouse",
+   "name": "무너진 작은 집",
+   "chapter": "prologue",
+   "zone": "0 집과 마을",
+   "floor": "지상",
+   "goal": "연출 장면",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [],
+   "next": [
+    {
+     "map": "P03",
+     "label": "컴퓨터 안",
+     "cond": "연출"
+    }
+   ],
+   "spawns": [
+    "start"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "P03",
+   "scene": "P03_FriendDesktop",
+   "name": "컴퓨터 안",
+   "chapter": "ch1",
+   "zone": "1 포획동",
+   "floor": "단말",
+   "goal": "안내서·연습·접속 기록을 살펴본다",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [],
+   "next": [
+    {
+     "map": "C01",
+     "label": "실험실",
+     "cond": "접속 기록 조사 후 연출"
+    }
+   ],
+   "spawns": [
+    "start"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "C01",
+   "scene": "C01_TankLab",
+   "name": "실험실",
+   "chapter": "ch1",
+   "zone": "1 포획동",
+   "floor": "B1",
+   "goal": "실험실을 빠져나간다",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [],
+   "next": [
+    {
+     "map": "C02",
+     "label": "격리 실험동 복도",
+     "cond": ""
+    }
+   ],
+   "spawns": [
+    "start",
+    "tank"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "C02",
+   "scene": "C02_EscapeWing",
+   "name": "격리 실험동 복도",
+   "chapter": "ch1",
+   "zone": "1 포획동",
+   "floor": "B1",
+   "goal": "복도 끝으로",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "C02.east",
+     "to": "C03",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "C03",
+     "label": "설비실·자료실",
+     "cond": ""
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_lab",
+    "from_c03"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "C03",
+   "scene": "C03_SpecimenArchive",
+   "name": "설비실 · 자료실",
+   "chapter": "ch2",
+   "zone": "2 연구동",
+   "floor": "B1",
+   "goal": "자료실을 지나 화물 적재장으로",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "C03.west",
+     "to": "C02",
+     "spawn": "from_c03",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "C03.east",
+     "to": "C04",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "C03.cafe",
+     "to": "M09",
+     "spawn": "from_archive",
+     "kind": "door",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "C04",
+     "label": "화물 적재장",
+     "cond": ""
+    },
+    {
+     "map": "M09",
+     "label": "직원 식당 ★",
+     "cond": "선택"
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_cafe",
+    "from_cargo"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M09",
+   "scene": "M09_StaffCafeteria",
+   "name": "직원 식당",
+   "chapter": "ch2",
+   "zone": "2 연구동",
+   "floor": "B1",
+   "goal": "선택 탐색",
+   "optional": true,
+   "safeSpawn": "from_archive",
+   "exits": [
+    {
+     "id": "M09.door",
+     "to": "C03",
+     "spawn": "from_cafe",
+     "kind": "door",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [],
+   "spawns": [
+    "from_archive"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "C04",
+   "scene": "C04_CargoBay",
+   "name": "화물 적재장",
+   "chapter": "ch2",
+   "zone": "2 연구동",
+   "floor": "B1",
+   "goal": "적재장을 지나 배양실로",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "C04.west",
+     "to": "C03",
+     "spawn": "from_cargo",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "C04.east",
+     "to": "C05",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "C05",
+     "label": "배양실",
+     "cond": ""
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_lab"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "C05",
+   "scene": "C05_CultureRoom",
+   "name": "배양실",
+   "chapter": "ch3",
+   "zone": "3 약품동",
+   "floor": "B1",
+   "goal": "연결 복도로",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "C05.west",
+     "to": "C04",
+     "spawn": "from_lab",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "C05.east",
+     "to": "C06",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "C05.door",
+     "to": "M14",
+     "spawn": "from_lab",
+     "kind": "door",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "C06",
+     "label": "연결 복도",
+     "cond": ""
+    },
+    {
+     "map": "M14",
+     "label": "약품 온실 ★",
+     "cond": "선택"
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_mix",
+    "from_greenhouse"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M14",
+   "scene": "M14_ChemGreenhouse",
+   "name": "약품 온실",
+   "chapter": "ch3",
+   "zone": "3 약품동",
+   "floor": "B1",
+   "goal": "선택 탐색",
+   "optional": true,
+   "safeSpawn": "from_lab",
+   "exits": [
+    {
+     "id": "M14.door",
+     "to": "C05",
+     "spawn": "from_greenhouse",
+     "kind": "door",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [],
+   "spawns": [
+    "from_lab"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "C06",
+   "scene": "C06_LongCorridor",
+   "name": "연결 복도",
+   "chapter": "ch3",
+   "zone": "3 약품동",
+   "floor": "B1",
+   "goal": "베넬",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "C06.west",
+     "to": "C05",
+     "spawn": "from_mix",
+     "kind": "edge",
+     "require": "",
+     "block": "c6_combat_locked",
+     "blocked": "sys_locked",
+     "note": ""
+    },
+    {
+     "id": "C06.east",
+     "to": "M13",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "c3_boss_done",
+     "block": "",
+     "blocked": "sys_locked",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M13",
+     "label": "혼합실",
+     "cond": "베넬 만남 뒤"
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_mix"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M13",
+   "scene": "M13_MixingRoom",
+   "name": "혼합실",
+   "chapter": "ch3",
+   "zone": "3 약품동",
+   "floor": "B1",
+   "goal": "관찰 휴게실로",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M13.west",
+     "to": "C06",
+     "spawn": "from_mix",
+     "kind": "edge",
+     "require": "",
+     "block": "venelle_carried",
+     "blocked": "sys_locked",
+     "note": ""
+    },
+    {
+     "id": "M13.east",
+     "to": "M15",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M15",
+     "label": "관찰 휴게실",
+     "cond": ""
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_rest"
+   ],
+   "requires": [
+    "c3_boss_done"
+   ],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M15",
+   "scene": "M15_ObservationLounge",
+   "name": "관찰 휴게실",
+   "chapter": "ch3",
+   "zone": "3 약품동",
+   "floor": "B1",
+   "goal": "오른쪽 화물 승강장으로",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M15.west",
+     "to": "M13",
+     "spawn": "from_rest",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M15.east",
+     "to": "M16",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "c3_boss_done",
+     "block": "",
+     "blocked": "sys_locked",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M16",
+     "label": "화물 승강장",
+     "cond": ""
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_lift"
+   ],
+   "requires": [
+    "c3_boss_done"
+   ],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M16",
+   "scene": "M16_CargoLift",
+   "name": "화물 승강장",
+   "chapter": "ch4",
+   "zone": "4 지하",
+   "floor": "B1→B2",
+   "goal": "승강기로 지하로 내려간다",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M16.west",
+     "to": "M15",
+     "spawn": "from_lift",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M16.east",
+     "to": "M17",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M17",
+     "label": "폐기소 거처",
+     "cond": ""
+    }
+   ],
+   "spawns": [
+    "start",
+    "lift_top",
+    "lift_bottom",
+    "from_shelter"
+   ],
+   "requires": [],
+   "spaceLines": [
+    "c4_platform_sign",
+    "c4_seal_look",
+    "c4_lift_up_sealed",
+    "c4_lift_ride",
+    "c4_lift_ride_v"
+   ],
+   "anchors": []
+  },
+  {
+   "id": "M17",
+   "scene": "M17_WasteShelter",
+   "name": "폐기소 거처",
+   "chapter": "ch4",
+   "zone": "4 지하",
+   "floor": "B2",
+   "goal": "F 와 교섭한다 (과자 10개 / 펌프 수리 / 충돌)",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M17.west",
+     "to": "M16",
+     "spawn": "from_shelter",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M17.east",
+     "to": "M20",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "waste_resolved",
+     "block": "",
+     "blocked": "waste_exit_wait",
+     "note": ""
+    },
+    {
+     "id": "M17.pump",
+     "to": "M18",
+     "spawn": "start",
+     "kind": "door",
+     "require": "waste_met",
+     "block": "",
+     "blocked": "waste_door_wait",
+     "note": ""
+    },
+    {
+     "id": "M17.market",
+     "to": "M19",
+     "spawn": "start",
+     "kind": "door",
+     "require": "waste_met",
+     "block": "",
+     "blocked": "waste_door_wait",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M20",
+     "label": "유지보수 터널",
+     "cond": "교섭 해결"
+    },
+    {
+     "map": "M18",
+     "label": "물 펌프실",
+     "cond": "만난 뒤"
+    },
+    {
+     "map": "M19",
+     "label": "폐품 시장 ★",
+     "cond": "선택"
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_pump",
+    "from_market",
+    "from_tunnel",
+    "meet"
+   ],
+   "requires": [],
+   "spaceLines": [
+    "c4_meet_2",
+    "c4_hatch",
+    "c4_deal_pump"
+   ],
+   "anchors": []
+  },
+  {
+   "id": "M18",
+   "scene": "M18_PumpRoom",
+   "name": "물 펌프실",
+   "chapter": "ch4",
+   "zone": "4 지하",
+   "floor": "B2",
+   "goal": "배수 → 차단기 → 이음쇠 → 가동",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M18.door",
+     "to": "M17",
+     "spawn": "from_pump",
+     "kind": "door",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [],
+   "spawns": [
+    "start"
+   ],
+   "requires": [
+    "waste_met"
+   ],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M19",
+   "scene": "M19_JunkMarket",
+   "name": "폐품 시장",
+   "chapter": "ch4",
+   "zone": "4 지하",
+   "floor": "B2",
+   "goal": "선택 탐색",
+   "optional": true,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M19.door",
+     "to": "M17",
+     "spawn": "from_market",
+     "kind": "door",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [],
+   "spawns": [
+    "start"
+   ],
+   "requires": [
+    "waste_met"
+   ],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M20",
+   "scene": "M20_MaintTunnel",
+   "name": "유지보수 터널",
+   "chapter": "ch5",
+   "zone": "5 정비동",
+   "floor": "B2",
+   "goal": "낮은 천장은 웅크려서",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M20.west",
+     "to": "M17",
+     "spawn": "from_tunnel",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M20.east",
+     "to": "M21",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M21",
+     "label": "정비 작업장",
+     "cond": ""
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_workshop"
+   ],
+   "requires": [
+    "waste_resolved"
+   ],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M21",
+   "scene": "M21_Workshop",
+   "name": "정비 작업장",
+   "chapter": "ch5",
+   "zone": "5 정비동",
+   "floor": "B2",
+   "goal": "새 기술 시험",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M21.west",
+     "to": "M20",
+     "spawn": "from_workshop",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M21.east",
+     "to": "M22",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M22",
+     "label": "컨베이어 홀",
+     "cond": ""
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_hall"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M22",
+   "scene": "M22_ConveyorHall",
+   "name": "컨베이어 홀",
+   "chapter": "ch5",
+   "zone": "5 정비동",
+   "floor": "B2",
+   "goal": "출구 문 — 전원 복구 또는 환기 통로",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M22.west",
+     "to": "M21",
+     "spawn": "from_hall",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M22.east",
+     "to": "M23",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M23",
+     "label": "수직 배선통로",
+     "cond": ""
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_shaft"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M23",
+   "scene": "M23_VerticalShaft",
+   "name": "수직 배선통로",
+   "chapter": "ch5",
+   "zone": "5 정비동",
+   "floor": "B2→1F",
+   "goal": "세 층을 올라 따돌린다",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M23.west",
+     "to": "M22",
+     "spawn": "from_shaft",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M23.top",
+     "to": "M24",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M24",
+     "label": "공동 세탁실",
+     "cond": ""
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_dorm"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M24",
+   "scene": "M24_Laundry",
+   "name": "공동 세탁실",
+   "chapter": "ch6",
+   "zone": "6 숙소",
+   "floor": "1F",
+   "goal": "숙소 복도 끝 수용동 연결문",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M24.west",
+     "to": "M23",
+     "spawn": "from_dorm",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M24.roof",
+     "to": "M26",
+     "spawn": "start",
+     "kind": "door",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M24.room",
+     "to": "M25",
+     "spawn": "start",
+     "kind": "door",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M27",
+     "label": "수용동",
+     "cond": "연결문 사건 — 들어가면 돌아오지 못함"
+    },
+    {
+     "map": "M25",
+     "label": "숙소 3호",
+     "cond": ""
+    },
+    {
+     "map": "M26",
+     "label": "기숙사 옥상 ★",
+     "cond": "선택"
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_roof",
+    "from_room"
+   ],
+   "requires": [],
+   "spaceLines": [
+    "c7_gate_look"
+   ],
+   "anchors": []
+  },
+  {
+   "id": "M25",
+   "scene": "M25_VenelleRoom",
+   "name": "숙소 3호",
+   "chapter": "ch6",
+   "zone": "6 숙소",
+   "floor": "1F",
+   "goal": "사진·편지·포장지",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M25.door",
+     "to": "M24",
+     "spawn": "from_room",
+     "kind": "door",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [],
+   "spawns": [
+    "start"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M26",
+   "scene": "M26_DormRoof",
+   "name": "기숙사 옥상",
+   "chapter": "ch6",
+   "zone": "6 숙소",
+   "floor": "옥상",
+   "goal": "선택: 바람",
+   "optional": true,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M26.door",
+     "to": "M24",
+     "spawn": "from_roof",
+     "kind": "door",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [],
+   "spawns": [
+    "start"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M27",
+   "scene": "M27_HoldingBlock",
+   "name": "수용동",
+   "chapter": "ch7",
+   "zone": "7 수용·접수동",
+   "floor": "1F",
+   "goal": "수용칸 제어반으로 사람들을 풀어 준다",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M27.west",
+     "to": "M24",
+     "spawn": "from_room",
+     "kind": "edge",
+     "require": "",
+     "block": "ch7_entered",
+     "blocked": "c7_back_sealed",
+     "note": ""
+    },
+    {
+     "id": "M27.east",
+     "to": "M28",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "holding_released",
+     "block": "",
+     "blocked": "c7_not_yet",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M28",
+     "label": "접수 홀",
+     "cond": "수용동 해방 뒤"
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_hall"
+   ],
+   "requires": [
+    "ch7_entered"
+   ],
+   "spaceLines": [
+    "c7_release_route",
+    "c7_release_route_v",
+    "c7_stairs",
+    "c7_gate_shut"
+   ],
+   "anchors": []
+  },
+  {
+   "id": "M28",
+   "scene": "M28_ReceptionHall",
+   "name": "접수 홀",
+   "chapter": "ch7",
+   "zone": "7 수용·접수동",
+   "floor": "1F",
+   "goal": "메이린 — 포획팔·유지보수 단말·셔터·제동 장치·젖은 바닥",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M28.west",
+     "to": "M27",
+     "spawn": "from_hall",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M28.booth",
+     "to": "M29",
+     "spawn": "start",
+     "kind": "door",
+     "require": "c7_meilin_done",
+     "block": "",
+     "blocked": "c7_hall_locked",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M29",
+     "label": "상담 부스",
+     "cond": "메이린 뒤"
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_booth"
+   ],
+   "requires": [
+    "holding_released"
+   ],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M29",
+   "scene": "M29_CounselBooth",
+   "name": "상담 부스",
+   "chapter": "ch7",
+   "zone": "7 수용·접수동",
+   "floor": "1F",
+   "goal": "영상실은 직원 카드로 (책상 / 분실물 상자)",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M29.hall",
+     "to": "M28",
+     "spawn": "from_booth",
+     "kind": "door",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M29.video",
+     "to": "M30",
+     "spawn": "start",
+     "kind": "door",
+     "require": "has_staff_card",
+     "block": "",
+     "blocked": "c7_need_card",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M30",
+     "label": "영상실",
+     "cond": "직원 카드"
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_video"
+   ],
+   "requires": [
+    "c7_meilin_done"
+   ],
+   "spaceLines": [
+    "c7_booth_enter"
+   ],
+   "anchors": []
+  },
+  {
+   "id": "M30",
+   "scene": "M30_VideoRoom",
+   "name": "영상실",
+   "chapter": "ch7",
+   "zone": "7 수용·접수동",
+   "floor": "1F",
+   "goal": "감시 모니터 → 관제탑 쪽 격벽",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M30.booth",
+     "to": "M29",
+     "spawn": "from_video",
+     "kind": "door",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M30.east",
+     "to": "M31",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "c7_feeds_seen",
+     "block": "",
+     "blocked": "c7_monitors_first",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M31",
+     "label": "관제탑",
+     "cond": "모니터 확인 → 격벽 사건"
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_tower"
+   ],
+   "requires": [
+    "has_staff_card"
+   ],
+   "spaceLines": [
+    "c7_lockdown",
+    "c7_lockdown_v",
+    "c7_bulkhead_talk",
+    "c7_feed_venelle",
+    "c7_feed_stairs"
+   ],
+   "anchors": []
+  },
+  {
+   "id": "M31",
+   "scene": "M31_ControlTower",
+   "name": "관제탑",
+   "chapter": "ch7",
+   "zone": "7 수용·접수동",
+   "floor": "2F",
+   "goal": "중앙 통제 단말로 위층 통로를 연다",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M31.west",
+     "to": "M30",
+     "spawn": "from_tower",
+     "kind": "edge",
+     "require": "",
+     "block": "c7_bulkhead_closed",
+     "blocked": "c7_bulkhead_shut",
+     "note": ""
+    },
+    {
+     "id": "M31.east",
+     "to": "M32",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "c7_control_done",
+     "block": "",
+     "blocked": "c7_control_first",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M32",
+     "label": "상층 회랑",
+     "cond": "통로 개방 뒤"
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_corridor"
+   ],
+   "requires": [
+    "c7_bulkhead_closed"
+   ],
+   "spaceLines": [
+    "c7_control_open",
+    "c7_knock"
+   ],
+   "anchors": []
+  },
+  {
+   "id": "M32",
+   "scene": "M32_UpperCorridor",
+   "name": "상층 회랑",
+   "chapter": "ch8",
+   "zone": "8 연구주임 구역",
+   "floor": "3F",
+   "goal": "라비엘",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M32.west",
+     "to": "M31",
+     "spawn": "from_corridor",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M32.east",
+     "to": "M33",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "c8_duel_done",
+     "block": "",
+     "blocked": "c8_not_yet",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M33",
+     "label": "라비엘의 방",
+     "cond": "재회 뒤"
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_room"
+   ],
+   "requires": [
+    "c7_control_done"
+   ],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M33",
+   "scene": "M33_RavielRoom",
+   "name": "라비엘의 방",
+   "chapter": "ch8",
+   "zone": "8 연구주임 구역",
+   "floor": "3F",
+   "goal": "액자 두 개",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M33.west",
+     "to": "M32",
+     "spawn": "from_room",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M33.east",
+     "to": "M34",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "c8_room_done",
+     "block": "",
+     "blocked": "c8_room_wait",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M34",
+     "label": "통신실",
+     "cond": "대화 뒤"
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_comm"
+   ],
+   "requires": [
+    "c8_duel_done"
+   ],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M34",
+   "scene": "M34_CommRoom",
+   "name": "통신실",
+   "chapter": "ch8",
+   "zone": "8 연구주임 구역",
+   "floor": "3F",
+   "goal": "통신실을 지나 교량으로",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M34.west",
+     "to": "M33",
+     "spawn": "from_comm",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M34.east",
+     "to": "M35",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M35",
+     "label": "연결 교량",
+     "cond": ""
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_bridge"
+   ],
+   "requires": [
+    "c8_room_done"
+   ],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M35",
+   "scene": "M35_SkyBridge",
+   "name": "연결 교량",
+   "chapter": "ch8",
+   "zone": "8 연구주임 구역",
+   "floor": "3F 교량",
+   "goal": "공연·서버동으로",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M35.west",
+     "to": "M34",
+     "spawn": "from_bridge",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M35.east",
+     "to": "M36",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M36",
+     "label": "대기실",
+     "cond": ""
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_wait"
+   ],
+   "requires": [
+    "c8_room_done"
+   ],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M36",
+   "scene": "M36_WaitingRoom",
+   "name": "대기실",
+   "chapter": "ch9",
+   "zone": "9 공연·서버동",
+   "floor": "3F",
+   "goal": "공연장으로",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M36.west",
+     "to": "M35",
+     "spawn": "from_wait",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M36.east",
+     "to": "M37",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M36.archive",
+     "to": "M38",
+     "spawn": "start",
+     "kind": "door",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M37",
+     "label": "공명 공연장",
+     "cond": ""
+    },
+    {
+     "map": "M38",
+     "label": "녹음 보관실 ★",
+     "cond": "선택"
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_hall",
+    "from_archive"
+   ],
+   "requires": [
+    "c8_room_done"
+   ],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M37",
+   "scene": "M37_ResonanceHall",
+   "name": "공명 공연장",
+   "chapter": "ch9",
+   "zone": "9 공연·서버동",
+   "floor": "3F",
+   "goal": "라크리모사 — 믹서(마이크 방향·스피커·게인)",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M37.west",
+     "to": "M36",
+     "spawn": "from_hall",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M37.east",
+     "to": "M39",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "c9_lac_done",
+     "block": "",
+     "blocked": "c9_hall_wait",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M39",
+     "label": "서버실",
+     "cond": "공연 뒤"
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_server"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M38",
+   "scene": "M38_RecordArchive",
+   "name": "녹음 보관실",
+   "chapter": "ch9",
+   "zone": "9 공연·서버동",
+   "floor": "3F",
+   "goal": "선택: 녹음 목록과 테이프",
+   "optional": true,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M38.wait",
+     "to": "M36",
+     "spawn": "from_archive",
+     "kind": "door",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [],
+   "spawns": [
+    "start"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M39",
+   "scene": "M39_ServerRoom",
+   "name": "서버실",
+   "chapter": "ch9",
+   "zone": "9 공연·서버동",
+   "floor": "3F",
+   "goal": "포획 단말 / 승선 대기실",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M39.west",
+     "to": "M37",
+     "spawn": "from_server",
+     "kind": "edge",
+     "require": "",
+     "block": "c9_hall_collapsed",
+     "blocked": "c9_hall_gone",
+     "note": ""
+    },
+    {
+     "id": "M39.east",
+     "to": "M42",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "c9_bin_done",
+     "block": "",
+     "blocked": "c9_server_wait",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M42",
+     "label": "승선 대기실",
+     "cond": "휴지통 복원 뒤"
+    },
+    {
+     "map": "M40",
+     "label": "포획 단말",
+     "cond": "강제 가동 뒤 사건"
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_terminal",
+    "from_boarding"
+   ],
+   "requires": [
+    "c9_lac_done"
+   ],
+   "spaceLines": [
+    "c9_force_broadcast",
+    "c9_lu_shock",
+    "c9_lu_shock_r",
+    "c9_comm_terminal",
+    "c9_shelter_after"
+   ],
+   "anchors": []
+  },
+  {
+   "id": "M40",
+   "scene": "M40_CaptureTerminal",
+   "name": "포획 단말",
+   "chapter": "ch9",
+   "zone": "9 공연·서버동",
+   "floor": "단말",
+   "goal": "정비도 파일",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [],
+   "next": [
+    {
+     "map": "M41",
+     "label": "휴지통 목록",
+     "cond": "불완전 판정 뒤 사건"
+    }
+   ],
+   "spawns": [
+    "start"
+   ],
+   "requires": [
+    "shelter_collapsed"
+   ],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M41",
+   "scene": "M41_RecycleList",
+   "name": "휴지통 목록",
+   "chapter": "ch9",
+   "zone": "9 공연·서버동",
+   "floor": "단말",
+   "goal": "항목 목록 → 정렬 → 선택 → 복원 → 구속 해제 → 내부 확인",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [],
+   "next": [
+    {
+     "map": "M39",
+     "label": "서버실 (방출 접점)",
+     "cond": "복원 뒤 사건"
+    }
+   ],
+   "spawns": [
+    "start"
+   ],
+   "requires": [
+    "c9_judged"
+   ],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M42",
+   "scene": "M42_BoardingLounge",
+   "name": "승선 대기실",
+   "chapter": "ch10",
+   "zone": "10 전이동",
+   "floor": "4F",
+   "goal": "캡슐 회랑으로",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M42.west",
+     "to": "M39",
+     "spawn": "from_boarding",
+     "kind": "edge",
+     "require": "",
+     "block": "c10_boarding_seen",
+     "blocked": "c10_back_gone",
+     "note": ""
+    },
+    {
+     "id": "M42.east",
+     "to": "M43",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M43",
+     "label": "캡슐 회랑",
+     "cond": ""
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_capsule"
+   ],
+   "requires": [
+    "c9_bin_done"
+   ],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M43",
+   "scene": "M43_CapsuleCorridor",
+   "name": "캡슐 회랑",
+   "chapter": "ch10",
+   "zone": "10 전이동",
+   "floor": "4F",
+   "goal": "전이 장치실로",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M43.west",
+     "to": "M42",
+     "spawn": "from_capsule",
+     "kind": "edge",
+     "require": "",
+     "block": "",
+     "blocked": "",
+     "note": ""
+    },
+    {
+     "id": "M43.east",
+     "to": "M44",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "c10_meilin_seen",
+     "block": "",
+     "blocked": "c10_meilin_first",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M44",
+     "label": "전이 장치실",
+     "cond": "메이린 장면 뒤"
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_device"
+   ],
+   "requires": [],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M44",
+   "scene": "M44_TransferChamber",
+   "name": "전이 장치실",
+   "chapter": "ch10",
+   "zone": "10 전이동",
+   "floor": "4F",
+   "goal": "아우렐리우스 — 결합부에서 한계 방출",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M44.east",
+     "to": "M45",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "c10_boss_done",
+     "block": "",
+     "blocked": "c10_not_done",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M45",
+     "label": "붕괴 연결로",
+     "cond": "최종전 뒤"
+    }
+   ],
+   "spawns": [
+    "start",
+    "from_corridor"
+   ],
+   "requires": [
+    "c10_meilin_seen"
+   ],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M45",
+   "scene": "M45_CollapseWay",
+   "name": "붕괴 연결로",
+   "chapter": "ch10",
+   "zone": "10 전이동",
+   "floor": "4F→중정",
+   "goal": "무너지는 길 끝까지",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [],
+   "next": [
+    {
+     "map": "M46",
+     "label": "무너진 중정",
+     "cond": "추락 사건"
+    }
+   ],
+   "spawns": [
+    "start"
+   ],
+   "requires": [
+    "c10_boss_done"
+   ],
+   "spaceLines": [
+    "c10_floor_breaks"
+   ],
+   "anchors": []
+  },
+  {
+   "id": "M46",
+   "scene": "M46_CollapsedCourt",
+   "name": "무너진 중정",
+   "chapter": "ch11",
+   "zone": "11 잔해",
+   "floor": "중정",
+   "goal": "",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [
+    {
+     "id": "M46.east",
+     "to": "M47",
+     "spawn": "start",
+     "kind": "edge",
+     "require": "c11_stood",
+     "block": "",
+     "blocked": "c11_not_yet",
+     "note": ""
+    }
+   ],
+   "next": [
+    {
+     "map": "M47",
+     "label": "잔해 더미",
+     "cond": "일어선 뒤"
+    }
+   ],
+   "spawns": [
+    "start"
+   ],
+   "requires": [
+    "c10_fall_done"
+   ],
+   "spaceLines": [],
+   "anchors": []
+  },
+  {
+   "id": "M47",
+   "scene": "M47_RubblePile",
+   "name": "잔해 더미",
+   "chapter": "ch11",
+   "zone": "11 잔해",
+   "floor": "중정",
+   "goal": "",
+   "optional": false,
+   "safeSpawn": "start",
+   "exits": [],
+   "next": [],
+   "spawns": [
+    "start"
+   ],
+   "requires": [
+    "c11_stood"
+   ],
+   "spaceLines": [],
+   "anchors": []
+  }
+ ],
+ "storyLinks": [
+  {
+   "from": "P01",
+   "to": "P02",
+   "spawn": "start",
+   "by": "op_village 연출"
+  },
+  {
+   "from": "P02",
+   "to": "P03",
+   "spawn": "start",
+   "by": "op_house 연출"
+  },
+  {
+   "from": "P03",
+   "to": "C01",
+   "spawn": "tank",
+   "by": "pc_exit 사건"
+  },
+  {
+   "from": "C01",
+   "to": "C02",
+   "spawn": "from_lab",
+   "by": "실험실 문틈 사건"
+  },
+  {
+   "from": "M24",
+   "to": "M27",
+   "spawn": "start",
+   "by": "ch7_gate 사건 (StoryEvents.Ch7Enter)"
+  },
+  {
+   "from": "M30",
+   "to": "M31",
+   "spawn": "start",
+   "by": "c7_bulkhead 사건"
+  },
+  {
+   "from": "M39",
+   "to": "M40",
+   "spawn": "start",
+   "by": "c9_capture 사건"
+  },
+  {
+   "from": "M40",
+   "to": "M41",
+   "spawn": "start",
+   "by": "c9_d16 사건 (불완전 판정)"
+  },
+  {
+   "from": "M41",
+   "to": "M39",
+   "spawn": "from_terminal",
+   "by": "c9_bin_list 사건 (복원·구속 해제)"
+  },
+  {
+   "from": "M45",
+   "to": "M46",
+   "spawn": "start",
+   "by": "c10_fall 사건"
+  }
+ ],
+ "remap": [
+  {
+   "map": "M00",
+   "to": "P01",
+   "spawn": "start"
+  },
+  {
+   "map": "M04",
+   "to": "C01",
+   "spawn": "tank"
+  },
+  {
+   "map": "M05",
+   "to": "C02",
+   "spawn": "from_lab"
+  },
+  {
+   "map": "M12",
+   "to": "C05",
+   "spawn": "start"
+  }
+ ],
+ "chapterSafe": [
+  {
+   "chapter": "prologue",
+   "map": "P01",
+   "spawn": "start"
+  },
+  {
+   "chapter": "ch1",
+   "map": "C01",
+   "spawn": "tank"
+  },
+  {
+   "chapter": "ch2",
+   "map": "C03",
+   "spawn": "start"
+  },
+  {
+   "chapter": "ch3",
+   "map": "C05",
+   "spawn": "start"
+  },
+  {
+   "chapter": "ch4",
+   "map": "M16",
+   "spawn": "start"
+  },
+  {
+   "chapter": "ch5",
+   "map": "M20",
+   "spawn": "start"
+  },
+  {
+   "chapter": "ch6",
+   "map": "M24",
+   "spawn": "start"
+  },
+  {
+   "chapter": "ch7",
+   "map": "M27",
+   "spawn": "start"
+  },
+  {
+   "chapter": "ch8",
+   "map": "M32",
+   "spawn": "start"
+  },
+  {
+   "chapter": "ch9",
+   "map": "M36",
+   "spawn": "start"
+  },
+  {
+   "chapter": "ch10",
+   "map": "M42",
+   "spawn": "start"
+  },
+  {
+   "chapter": "ch11",
+   "map": "M46",
+   "spawn": "start"
+  },
+  {
+   "chapter": "end",
+   "map": "M47",
+   "spawn": "start"
+  }
+ ],
+ "events": [
+  {
+   "id": "pre_venelle",
+   "label": "베넬 전투 전",
+   "chapter": "ch3",
+   "map": "C06",
+   "spawn": "start",
+   "flagsOn": [
+    "op_village_done",
+    "op_house_done",
+    "op_desktop_done",
+    "op_desktop_land",
+    "pc_guide_read",
+    "op_r_in",
+    "c1_tank_broken",
+    "c1_researchers_down",
+    "op_tank_done",
+    "lab_woke",
+    "lab_realized",
+    "c1_left_lab",
+    "c1_escape_view",
+    "c1_shortcut_open",
+    "ev_c2_start",
+    "ev_c3_start",
+    "corridor_memory"
+   ],
+   "flagsOff": [
+    "c3_boss_intro",
+    "c3_boss_done",
+    "c3_negotiated",
+    "c3_joined",
+    "c3_rest_done"
+   ],
+   "before": "",
+   "chapterId": "ch3",
+   "venelle": "set:pending",
+   "raviel": "keep",
+   "skills": [
+    "pull"
+   ],
+   "items": [],
+   "sets": [],
+   "note": ""
+  },
+  {
+   "id": "post_venelle",
+   "label": "베넬 전투 후",
+   "chapter": "ch3",
+   "map": "M13",
+   "spawn": "start",
+   "flagsOn": [
+    "c3_boss_intro",
+    "c3_boss_done",
+    "c3_negotiated",
+    "venelle_spared"
+   ],
+   "flagsOff": [],
+   "before": "pre_venelle",
+   "chapterId": "ch3",
+   "venelle": "choose:ally,apart,dead",
+   "raviel": "keep",
+   "skills": [],
+   "items": [],
+   "sets": [],
+   "note": ""
+  },
+  {
+   "id": "ch4_lift",
+   "label": "승강장 (4장 시작)",
+   "chapter": "ch4",
+   "map": "M16",
+   "spawn": "start",
+   "flagsOn": [
+    "seen_m15_lift_sign",
+    "demo_finished",
+    "c3_rest_done"
+   ],
+   "flagsOff": [],
+   "before": "post_venelle",
+   "chapterId": "ch4",
+   "venelle": "choose:ally,apart,dead",
+   "raviel": "keep",
+   "skills": [],
+   "items": [
+    "snack:13"
+   ],
+   "sets": [],
+   "note": ""
+  },
+  {
+   "id": "ch4_meet",
+   "label": "F·008 첫 만남",
+   "chapter": "ch4",
+   "map": "M17",
+   "spawn": "start",
+   "flagsOn": [
+    "ev_c4_start",
+    "m16_lift_down",
+    "c4_lift_first"
+   ],
+   "flagsOff": [
+    "waste_met"
+   ],
+   "before": "ch4_lift",
+   "chapterId": "ch4",
+   "venelle": "choose:ally,apart,dead",
+   "raviel": "keep",
+   "skills": [],
+   "items": [],
+   "sets": [],
+   "note": ""
+  },
+  {
+   "id": "ch4_pump_before",
+   "label": "펌프 해결 전",
+   "chapter": "ch4",
+   "map": "M18",
+   "spawn": "start",
+   "flagsOn": [
+    "waste_met",
+    "waste_pump_promised"
+   ],
+   "flagsOff": [],
+   "before": "ch4_meet",
+   "chapterId": "ch4",
+   "venelle": "choose:ally,apart,dead",
+   "raviel": "keep",
+   "skills": [],
+   "items": [],
+   "sets": [],
+   "note": ""
+  },
+  {
+   "id": "ch4_pump_after",
+   "label": "펌프 해결 후",
+   "chapter": "ch4",
+   "map": "M17",
+   "spawn": "from_pump",
+   "flagsOn": [
+    "pump_valve_open",
+    "pump_power_on",
+    "pump_part_fixed",
+    "waste_pump_fixed",
+    "waste_resolved",
+    "waste_water_on"
+   ],
+   "flagsOff": [],
+   "before": "ch4_pump_before",
+   "chapterId": "ch4",
+   "venelle": "choose:ally,apart,dead",
+   "raviel": "keep",
+   "skills": [],
+   "items": [],
+   "sets": [
+    "wasteResult=repair"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ch6_gate",
+   "label": "수용동 연결문 앞 (6장 끝)",
+   "chapter": "ch6",
+   "map": "M24",
+   "spawn": "start",
+   "flagsOn": [
+    "ev_c5_start",
+    "pulse_learned",
+    "used_burst",
+    "ws_tested",
+    "ev_c6_start",
+    "m23_top_said"
+   ],
+   "flagsOff": [],
+   "before": "ch4_pump_after",
+   "chapterId": "ch6",
+   "venelle": "choose:ally,apart,dead",
+   "raviel": "keep",
+   "skills": [
+    "pulse"
+   ],
+   "items": [],
+   "sets": [],
+   "note": ""
+  },
+  {
+   "id": "ch7_release_before",
+   "label": "수용동 해방 전",
+   "chapter": "ch7",
+   "map": "M27",
+   "spawn": "start",
+   "flagsOn": [
+    "ch7_ready",
+    "ch7_entered"
+   ],
+   "flagsOff": [
+    "holding_released",
+    "holding_open"
+   ],
+   "before": "ch6_gate",
+   "chapterId": "ch7",
+   "venelle": "choose:ally,apart,dead",
+   "raviel": "keep",
+   "skills": [],
+   "items": [],
+   "sets": [],
+   "note": ""
+  },
+  {
+   "id": "ch7_release_after",
+   "label": "수용동 해방 후",
+   "chapter": "ch7",
+   "map": "M27",
+   "spawn": "start",
+   "flagsOn": [
+    "holding_open",
+    "holding_released",
+    "c7_enter_seen",
+    "has_staff_card",
+    "got_staff_card_desk"
+   ],
+   "flagsOff": [],
+   "before": "ch7_release_before",
+   "chapterId": "ch7",
+   "venelle": "choose:ally,apart,dead",
+   "raviel": "keep",
+   "skills": [],
+   "items": [
+    "staff_card:1"
+   ],
+   "sets": [
+    "shelter+holding_released"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ch7_meilin",
+   "label": "메이린 전투",
+   "chapter": "ch7",
+   "map": "M28",
+   "spawn": "start",
+   "flagsOn": [],
+   "flagsOff": [
+    "c7_meilin_done",
+    "c7_meilin_met",
+    "hide_meilin"
+   ],
+   "before": "ch7_release_after",
+   "chapterId": "ch7",
+   "venelle": "choose:ally,apart,dead",
+   "raviel": "keep",
+   "skills": [],
+   "items": [],
+   "sets": [],
+   "note": ""
+  },
+  {
+   "id": "ch7_bulkhead",
+   "label": "베넬 격벽 (영상실)",
+   "chapter": "ch7",
+   "map": "M30",
+   "spawn": "start",
+   "flagsOn": [
+    "c7_meilin_met",
+    "c7_meilin_done",
+    "hide_meilin"
+   ],
+   "flagsOff": [
+    "c7_feeds_seen",
+    "c7_bulkhead_closed"
+   ],
+   "before": "ch7_meilin",
+   "chapterId": "ch7",
+   "venelle": "choose:ally,apart,dead",
+   "raviel": "keep",
+   "skills": [],
+   "items": [],
+   "sets": [],
+   "note": ""
+  },
+  {
+   "id": "ch8_reunion",
+   "label": "라비엘 재회",
+   "chapter": "ch8",
+   "map": "M32",
+   "spawn": "start",
+   "flagsOn": [
+    "c7_feeds_seen",
+    "c7_lockdown",
+    "c7_bulkhead_closed",
+    "c7_control_done",
+    "c7_tower_seen"
+   ],
+   "flagsOff": [
+    "c8_met",
+    "c8_route_chosen",
+    "c8_duel_done",
+    "hide_raviel",
+    "show_ravielBeast"
+   ],
+   "before": "ch7_bulkhead",
+   "chapterId": "ch8",
+   "venelle": "choose:ally_bulkhead,apart,dead",
+   "raviel": "keep",
+   "skills": [],
+   "items": [],
+   "sets": [],
+   "note": ""
+  },
+  {
+   "id": "ch8_room",
+   "label": "라비엘의 방 (고백)",
+   "chapter": "ch8",
+   "map": "M33",
+   "spawn": "start",
+   "flagsOn": [
+    "c8_met",
+    "c8_route_chosen",
+    "c8_duel_done"
+   ],
+   "flagsOff": [
+    "c8_room_done",
+    "hide_raviel"
+   ],
+   "before": "ch8_reunion",
+   "chapterId": "ch8",
+   "venelle": "choose:ally_bulkhead,apart,dead",
+   "raviel": "keep",
+   "skills": [],
+   "items": [],
+   "sets": [
+    "friendRoute=flee"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ch9_lacrimosa",
+   "label": "라크리모사 전투",
+   "chapter": "ch9",
+   "map": "M37",
+   "spawn": "start",
+   "flagsOn": [
+    "c8_room_done",
+    "ev_ch9_start"
+   ],
+   "flagsOff": [
+    "c9_lac_done",
+    "c9_lac_met",
+    "hide_lacrimosa"
+   ],
+   "before": "ch8_room",
+   "chapterId": "ch9",
+   "venelle": "choose:ally_bulkhead,apart,dead",
+   "raviel": "ally",
+   "skills": [],
+   "items": [],
+   "sets": [
+    "reunionChoice=hand"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ch9_collapse",
+   "label": "대피실 붕괴 (서버실)",
+   "chapter": "ch9",
+   "map": "M39",
+   "spawn": "start",
+   "flagsOn": [
+    "c9_lac_met",
+    "c9_lac_done"
+   ],
+   "flagsOff": [
+    "shelter_collapsed"
+   ],
+   "before": "ch9_lacrimosa",
+   "chapterId": "ch9",
+   "venelle": "choose:ally_bulkhead,apart,dead",
+   "raviel": "ally",
+   "skills": [],
+   "items": [],
+   "sets": [
+    "lacrimosaResult=subdued"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ch9_bin",
+   "label": "휴지통 복원",
+   "chapter": "ch9",
+   "map": "M41",
+   "spawn": "start",
+   "flagsOn": [
+    "shelter_collapsed",
+    "c9_hall_collapsed",
+    "lacrimosa_dead",
+    "c9_captured",
+    "c9_terminal_seen",
+    "c9_judged",
+    "c9_moved_to_bin",
+    "c9_in_bin"
+   ],
+   "flagsOff": [
+    "c9_bin_done"
+   ],
+   "before": "ch9_collapse",
+   "chapterId": "ch9",
+   "venelle": "choose:ally_bulkhead,apart,dead",
+   "raviel": "ally",
+   "skills": [],
+   "items": [],
+   "sets": [],
+   "note": ""
+  },
+  {
+   "id": "ch10_phase1",
+   "label": "최종전 1단계",
+   "chapter": "ch10",
+   "map": "M44",
+   "spawn": "start",
+   "flagsOn": [
+    "c9_bin_done",
+    "c9_caught",
+    "c9_restored",
+    "c9_released",
+    "c10_capsule_failed",
+    "c10_meilin_seen",
+    "c10_boarding_seen",
+    "ev_ch10_start"
+   ],
+   "flagsOff": [
+    "c10_confront_done",
+    "c10_boss_done"
+   ],
+   "before": "ch9_bin",
+   "chapterId": "ch10",
+   "venelle": "choose:ally_bulkhead,apart,dead",
+   "raviel": "ally",
+   "skills": [],
+   "items": [],
+   "sets": [],
+   "note": ""
+  },
+  {
+   "id": "ch10_phase2",
+   "label": "최종전 2단계",
+   "chapter": "ch10",
+   "map": "M44",
+   "spawn": "start",
+   "flagsOn": [
+    "c10_confront_done",
+    "aur_phase_1_done",
+    "limit_release_1",
+    "show_raviel_inj"
+   ],
+   "flagsOff": [],
+   "before": "ch10_phase1",
+   "chapterId": "ch10",
+   "venelle": "choose:ally_bulkhead,apart,dead",
+   "raviel": "injured",
+   "skills": [],
+   "items": [],
+   "sets": [
+    "limitReleases=1"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ch10_phase3",
+   "label": "최종전 3단계",
+   "chapter": "ch10",
+   "map": "M44",
+   "spawn": "start",
+   "flagsOn": [
+    "aur_phase_2_done",
+    "limit_release_2"
+   ],
+   "flagsOff": [],
+   "before": "ch10_phase2",
+   "chapterId": "ch10",
+   "venelle": "choose:ally_bulkhead,apart,dead",
+   "raviel": "injured",
+   "skills": [],
+   "items": [],
+   "sets": [
+    "limitReleases=2"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ch11_talk",
+   "label": "마지막 대화 (무너진 중정)",
+   "chapter": "ch11",
+   "map": "M46",
+   "spawn": "start",
+   "flagsOn": [
+    "aur_phase_3_done",
+    "limit_release_3",
+    "c10_boss_done",
+    "aurelius_dead",
+    "meilin_dead",
+    "capsules_dead",
+    "transfer_zero",
+    "c10_fall_done"
+   ],
+   "flagsOff": [
+    "c11_talk_done",
+    "c11_stood",
+    "raviel_dead"
+   ],
+   "before": "ch10_phase3",
+   "chapterId": "ch11",
+   "venelle": "choose:ally_bulkhead,apart,dead",
+   "raviel": "injured",
+   "skills": [],
+   "items": [],
+   "sets": [
+    "limitReleases=3"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ch11_ending",
+   "label": "마지막 방출과 엔딩",
+   "chapter": "ch11",
+   "map": "M47",
+   "spawn": "start",
+   "flagsOn": [
+    "c11_talk_done",
+    "raviel_dead",
+    "c11_stood",
+    "c11_hand"
+   ],
+   "flagsOff": [],
+   "before": "ch11_talk",
+   "chapterId": "ch11",
+   "venelle": "choose:ally_bulkhead,apart,dead",
+   "raviel": "dead",
+   "skills": [],
+   "items": [],
+   "sets": [],
+   "note": ""
+  }
+ ]
+}

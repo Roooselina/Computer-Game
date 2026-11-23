@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc296dfdeb3ec9d4794133319fa6cf12, type: 3}
+  m_Name: Art_adult
+  m_EditorClassIdentifier: EW.Game::EW.CharacterArt
+  id: adult
+  displayName: "\uC5B4\uB978"
+  controller: {fileID: 9100000, guid: 93e8780353e84164bb3230a4fc9b8366, type: 2}
+  defaultSprite: {fileID: -1874954124800763107, guid: 4892fad6d0c876d4f992fb6a20c7ae77, type: 3}
+  facesRight: 0
+  flipForLeft: 1
+  leftController: {fileID: 0}
+  height: 1.45
+  hover: 0
+  sortingOrder: 10

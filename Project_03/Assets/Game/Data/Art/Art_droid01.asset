@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc296dfdeb3ec9d4794133319fa6cf12, type: 3}
+  m_Name: Art_droid01
+  m_EditorClassIdentifier: EW.Game::EW.CharacterArt
+  id: droid01
+  displayName: "\uD3EC\uD68D \uB4DC\uB860(\uC784\uC2DC: Foozle Droid01)"
+  controller: {fileID: 9100000, guid: 403497d89a406ea4ca0b22d48a3c4128, type: 2}
+  defaultSprite: {fileID: -966606261123996786, guid: f72d859b020cdb344a91e832910a414b, type: 3}
+  facesRight: 0
+  flipForLeft: 1
+  leftController: {fileID: 0}
+  height: 1
+  hover: 1
+  sortingOrder: 9

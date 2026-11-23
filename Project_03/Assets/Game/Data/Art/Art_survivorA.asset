@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc296dfdeb3ec9d4794133319fa6cf12, type: 3}
+  m_Name: Art_survivorA
+  m_EditorClassIdentifier: EW.Game::EW.CharacterArt
+  id: survivorA
+  displayName: "\uC0DD\uC874\uC790"
+  controller: {fileID: 9100000, guid: 5c44b3b3793bfdf4cb7615b9f0959658, type: 2}
+  defaultSprite: {fileID: 4604039127461230707, guid: 3bd47d68710d1b044bd0a50202795fde, type: 3}
+  facesRight: 0
+  flipForLeft: 1
+  leftController: {fileID: 0}
+  height: 1.45
+  hover: 0
+  sortingOrder: 10

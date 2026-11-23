@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc296dfdeb3ec9d4794133319fa6cf12, type: 3}
+  m_Name: Art_researcher
+  m_EditorClassIdentifier: EW.Game::EW.CharacterArt
+  id: researcher
+  displayName: "\uC5F0\uAD6C\uC6D0"
+  controller: {fileID: 9100000, guid: 68a8b1bfa825199419fa052080893110, type: 2}
+  defaultSprite: {fileID: 2689094251217424052, guid: 764bf2abdde2afa4ebd4c66f1d86a0e1, type: 3}
+  facesRight: 1
+  flipForLeft: 1
+  leftController: {fileID: 0}
+  height: 1.45
+  hover: 0
+  sortingOrder: 10

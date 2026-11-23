@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc296dfdeb3ec9d4794133319fa6cf12, type: 3}
+  m_Name: Art_memberA
+  m_EditorClassIdentifier: EW.Game::EW.CharacterArt
+  id: memberA
+  displayName: "\uB2E8\uC6D0"
+  controller: {fileID: 9100000, guid: 15296873b3203ff47a9a0ed33f70cde3, type: 2}
+  defaultSprite: {fileID: -3678453807848558761, guid: a06cc20d17a00da40951f4c3f0790474, type: 3}
+  facesRight: 0
+  flipForLeft: 1
+  leftController: {fileID: 0}
+  height: 1.45
+  hover: 0
+  sortingOrder: 10

@@ -1,0 +1,20 @@
+{
+    "name": "EW.Game.Editor",
+    "rootNamespace": "EW.EditorTools",
+    "references": [
+        "EW.Game",
+        "Unity.2D.Sprite.Editor",
+        "UnityEngine.UI"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
